@@ -1,5 +1,7 @@
 |ref-1|
 
+Should be a ref target before this, and after.
+
 .. _lorem-1-{+project+}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec turpis justo. Aenean eros neque, molestie quis est dictum, accumsan hendrerit nisi. 
@@ -8,6 +10,8 @@ accumsan augue. Nulla malesuada porta euismod. Aliquam erat volutpat. Pellentesq
 Vestibulum sed leo sed nisi laoreet mattis vel vitae turpis. Nunc nec venenatis nunc. Nunc dapibus ante fringilla, ultricies ex vel, iaculis eros.
 
 |ref-2|
+
+Should be a ref target before this, and after.
 
 .. _lorem-2-{+project+}
 
@@ -20,6 +24,8 @@ vestibulum nulla sagittis sed. Donec quis libero dignissim, imperdiet justo id, 
 
 |ref-3|
 
+Should be a ref target before this, and after.
+
 .. _lorem-3-{+project+}
 
 Phasellus convallis lacus sed massa laoreet vestibulum. Aliquam dictum hendrerit magna id placerat. Fusce a molestie tortor, sit amet 
@@ -31,6 +37,8 @@ erat. Ut orci mi, fermentum vitae eros sed, consequat tincidunt risus.
 
 |ref-4|
 
+Should be a ref target before this, and after.
+
 .. _lorem-4-{+project+}
 
 Proin et magna ut mauris varius iaculis. Integer ultricies pretium commodo. Nulla interdum bibendum vulputate. Integer non augue lorem. 
@@ -38,6 +46,8 @@ Vestibulum ac venenatis est, nec ornare lacus. Phasellus imperdiet quis massa ne
 dictum eget metus vitae, dignissim scelerisque dui.
 
 |ref-5|
+
+Should be a ref target before this, and after.
 
 .. _lorem-5-{+project+}
 
