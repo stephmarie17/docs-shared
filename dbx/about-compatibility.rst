@@ -1,5 +1,3 @@
-About Compatibility Tables
---------------------------
 
 We include compatibility tables for each version of the driver to guide
 your decisions on what versions you need to ensure your environment
@@ -15,7 +13,7 @@ Read the sections below for detailed explanations of each table.
 .. _mongodb-compatibility-table-about-{+driver+}:
 
 MongoDB Compatibility Table
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the **MongoDB Compatibility** table, the columns are labeled with
 versions of MongoDB server and the rows are labeled with major release
@@ -47,7 +45,7 @@ appear on the chart because they are unsupported.
 .. _language-compatibility-table-about-{+driver+}:
 
 Language Compatibility Table
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the **Language Compatibility** table, the columns are labeled with
 versions of the language (e.g. Node.js, Python, etc.) and the rows are
