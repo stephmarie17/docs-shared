@@ -1,6 +1,5 @@
-============================
-MongoDB Compatibility Tables
-============================
+About Compatibility Tables
+--------------------------
 
 We include compatibility tables for each version of the driver to guide
 your decisions on what versions you need to ensure your environment
