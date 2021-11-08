@@ -14,10 +14,10 @@ Read the sections below for detailed explanations of each table.
 
 .. _mongodb-compatibility-table-about-{+driver+}:
 
-MongoDB Compatibility Tables
-----------------------------
+MongoDB Compatibility Table
+---------------------------
 
-In the **MongoDB Compatibility** tables, the columns are labeled with
+In the **MongoDB Compatibility** table, the columns are labeled with
 versions of MongoDB server and the rows are labeled with major release
 versions of the driver.
 
@@ -46,10 +46,10 @@ appear on the chart because they are unsupported.
 
 .. _language-compatibility-table-about-{+driver+}:
 
-Language Compatibility Tables
------------------------------
+Language Compatibility Table
+----------------------------
 
-In the **Language Compatibility** tables, the columns are labeled with
+In the **Language Compatibility** table, the columns are labeled with
 versions of the language (e.g. Node.js, Python, etc.) and the rows are
 labeled with major release versions of the driver.
 
