@@ -7,12 +7,12 @@ remains fully operational.
 
 We maintain the following tables for each driver:
 
-- :ref:`MongoDB compatibility <mongodb-compatibility-tables-{+driver+}>`
-- :ref:`Language compatibility <language-compatibility-tables-{+driver+}>`
+- :ref:`MongoDB compatibility <mongodb-compatibility-table-about-{+driver+}>`
+- :ref:`Language compatibility <language-compatibility-table-about-{+driver+}>`
 
 Read the sections below for detailed explanations of each table.
 
-.. _mongodb-compatibility-tables-{+driver+}:
+.. _mongodb-compatibility-table-about-{+driver+}:
 
 MongoDB Compatibility Tables
 ----------------------------
@@ -44,7 +44,7 @@ appear on the chart because they are unsupported.
    Although the drivers do not advertise compatibility with the versions of
    the server released after them, they are usually interoperable.
 
-.. _language-compatibility-tables-{+driver+}:
+.. _language-compatibility-table-about-{+driver+}:
 
 Language Compatibility Tables
 -----------------------------
