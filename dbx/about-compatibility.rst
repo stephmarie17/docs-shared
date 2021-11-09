@@ -5,14 +5,14 @@ remains fully operational.
 
 We maintain the following tables for each driver:
 
-- :ref:`MongoDB compatibility <mongodb-compatibility-table-about-{+driver+}>`
-- :ref:`Language compatibility <language-compatibility-table-about-{+driver+}>`
+- :ref:`About MongoDB compatibility <mongodb-compatibility-table-about-{+driver+}>`
+- :ref:`About language compatibility <language-compatibility-table-about-{+driver+}>`
 
 Read the sections below for detailed explanations of each table.
 
 .. _mongodb-compatibility-table-about-{+driver+}:
 
-MongoDB Compatibility Table
+About MongoDB Compatibility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the **MongoDB Compatibility** table, the columns are labeled with
@@ -44,7 +44,7 @@ appear on the chart because they are unsupported.
 
 .. _language-compatibility-table-about-{+driver+}:
 
-Language Compatibility Table
+About Language Compatibility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the **Language Compatibility** table, the columns are labeled with
