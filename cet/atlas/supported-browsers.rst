@@ -5,15 +5,15 @@
    * - Supported Web Browser
      - Supported Version(s)
      
-   * - `Google Chrome <https://www.google.com/chrome/>`_
+   * - `Google Chrome <https://www.google.com/chrome/>`__
      - latest stable
 
-   * - `Mozilla Firefox <https://www.mozilla.org/en-US/firefox/new/>`_
+   * - `Mozilla Firefox <https://www.mozilla.org/en-US/firefox/new/>`__
      - latest stable
 
-   * - `Microsoft Edge <https://www.microsoft.com/en-us/windows/microsoft-edge>`_
+   * - `Microsoft Edge <https://www.microsoft.com/en-us/windows/microsoft-edge>`__
      - latest stable
 
-   * - `Apple Safari <https://www.apple.com/safari/>`_
+   * - `Apple Safari <https://www.apple.com/safari/>`__
      - latest stable version on the current and two prior versions of
        macOS
