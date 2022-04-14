@@ -265,6 +265,42 @@
      - |checkmark|
      -
 
+   * - Windows 7/8/8.1
+     - x86_64
+     - Enterprise
+     - 
+     - 
+     - 
+     - |checkmark|
+     - |checkmark|
+
+   * - Windows 7/8/8.1
+     - x86_64
+     - Community
+     - 
+     - 
+     - 
+     - |checkmark|
+     - |checkmark|
+
+   * - Windows Server 2008R2/2012/2012R2
+     - x86_64
+     - Community
+     - 
+     - 
+     - 
+     - |checkmark|
+     - |checkmark|
+
+   * - Windows Server 2008R2/2012/2012R2
+     - x86_64
+     - Community
+     - 
+     - 
+     - 
+     - |checkmark|
+     - |checkmark|
+
    * - Windows 10 / Server 2016
      - x86_64
      - Enterprise
@@ -280,60 +316,6 @@
      - |checkmark|
      - |checkmark|
      - |checkmark|
-     - |checkmark|
-     - |checkmark|
-
-   * - Windows 8.1 / Server 2012 R2
-     - x86_64
-     - Enterprise
-     -
-     -
-     -
-     - |checkmark|
-     - |checkmark|
-
-   * - Windows 8.1 / Server 2012 R2
-     - x86_64
-     - Community
-     -
-     -
-     -
-     - |checkmark|
-     - |checkmark|
-
-   * - Windows 8 / Server 2012
-     - x86_64
-     - Enterprise
-     -
-     -
-     -
-     - |checkmark|
-     - |checkmark|
-
-   * - Windows 8 / Server 2012
-     - x86_64
-     - Community
-     -
-     -
-     -
-     - |checkmark|
-     - |checkmark|
-
-   * - Windows 7 / Server 2008 R2
-     - x86_64
-     - Enterprise
-     -
-     -
-     -
-     - |checkmark|
-     - |checkmark|
-
-   * - Windows 7 / Server 2008 R2
-     - x86_64
-     - Community
-     -
-     -
-     -
      - |checkmark|
      - |checkmark|
 
