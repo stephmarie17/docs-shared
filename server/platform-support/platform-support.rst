@@ -13,7 +13,7 @@
      - 4.2      
      - 4.0      
 
-   * - Amazon Linux 2
+   * - Amazon Linux V2
      - x86_64
      - Enterprise
      - |checkmark|
@@ -22,7 +22,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - Amazon Linux 2
+   * - Amazon Linux V2
      - x86_64
      - Community
      - |checkmark|
