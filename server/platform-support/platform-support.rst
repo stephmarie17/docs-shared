@@ -53,7 +53,7 @@
      - x86_64
      - Enterprise
      - |checkmark|
-     - 
+     - 5.0.8+
      - 
      - 
      -
@@ -62,7 +62,7 @@
      - x86_64
      - Community
      - |checkmark|
-     - 
+     - 5.0.8+
      - 
      - 
      -
