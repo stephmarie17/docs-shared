@@ -1,3 +1,9 @@
+.. important:: v4.0 End of Life
+
+   v4.0 reached end of life on April 30, 2022 and is no longer 
+   officially supported by MongoDB.
+
+
 .. list-table::
    :header-rows: 1
    :stub-columns: 1
