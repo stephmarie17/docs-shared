@@ -563,7 +563,7 @@
      - s390x
      - Enterprise
      - |checkmark|
-     - 
+     - 5.0.9+
      - 
      - 
      - 
