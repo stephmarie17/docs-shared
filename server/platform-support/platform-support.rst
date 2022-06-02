@@ -109,7 +109,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS/Oracle Linux 8.0+
+   * - RHEL/CentOS/Oracle Linux/Rocky/Alma 8.0+
      - x86_64
      - Enterprise
      - |checkmark|
@@ -118,7 +118,7 @@
      - 4.2.1+
      - 4.0.14+
 
-   * - RHEL/CentOS/Oracle Linux 8.0+
+   * - RHEL/CentOS/Oracle Linux/Rocky/Alma 8.0+
      - x86_64
      - Community
      - |checkmark|
@@ -433,7 +433,7 @@
      - 4.2.13+
      -
 
-   * - RHEL/CentOS 8
+   * - RHEL/CentOS/Rocky/Alma 8
      - arm64
      - Enterprise
      - |checkmark|
@@ -442,7 +442,7 @@
      -
      -
 
-   * - RHEL/CentOS 8
+   * - RHEL/CentOS/Rocky/Alma 8
      - arm64
      - Community
      - |checkmark|
@@ -505,7 +505,7 @@
      - 
      - |checkmark|
 
-   * - RHEL/CentOS 8
+   * - RHEL/CentOS/Rocky/Alma 8
      - ppc64le
      - Enterprise
      - |checkmark|
@@ -514,7 +514,7 @@
      - 4.2.7+
      - 
 
-   * - RHEL/CentOS 8
+   * - RHEL/CentOS/Rocky/Alma 8
      - ppc64le
      - Community
      -
@@ -559,7 +559,7 @@
      - 
      -  
 
-   * - RHEL/CentOS 8
+   * - RHEL/CentOS/Rocky/Alma 8
      - s390x
      - Enterprise
      - |checkmark|
@@ -568,7 +568,7 @@
      - 
      - 
 
-   * - RHEL/CentOS 8
+   * - RHEL/CentOS/Rocky/Alma 8
      - s390x
      - Community
      - 
