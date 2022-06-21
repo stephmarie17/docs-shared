@@ -181,7 +181,7 @@
      - 4.2.1+
      -
 
-   * - SLES 12 [#SLES12-SP-info]
+   * - SLES 12
      - x86_64
      - Enterprise
      - |checkmark|
@@ -190,7 +190,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - SLES 12 [#SLES12-SP-info]
+   * - SLES 12
      - x86_64
      - Community
      - |checkmark|
@@ -613,7 +613,7 @@
      -
      - 4.0.0 - 4.0.13
 
-   * - SLES 12 [#SLES12-SP-info]
+   * - SLES 12
      - s390x
      - Enterprise
      -
@@ -622,7 +622,7 @@
      - 4.2.0 - 4.2.14
      - 4.0.6 - 4.0.24
 
-   * - SLES 12 [#SLES12-SP-info]
+   * - SLES 12
      - s390x
      - Community
      -
