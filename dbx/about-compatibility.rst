@@ -37,11 +37,6 @@ release.
 We recommend that you avoid using older versions of the drivers that do not
 appear on the chart because they are unsupported.
 
-.. note::
-
-   Although the drivers do not advertise compatibility with the versions of
-   the server released after them, they are usually interoperable.
-
 .. _language-compatibility-table-about-{+driver+}:
 
 About Language Compatibility
