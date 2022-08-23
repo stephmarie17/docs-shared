@@ -16,5 +16,3 @@ Compatibility Table Legend
        new MongoDB features are supported.
    * - No mark
      - The Driver version is not tested with the MongoDB version.
-
-|
