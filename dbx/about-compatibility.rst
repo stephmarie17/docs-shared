@@ -11,8 +11,7 @@ Read the following section for detailed explanations of each table.
 MongoDB Compatibility Table
 ---------------------------
 
-In the **MongoDB Compatibility** table, each column represents a version of 
-version of MongoDB server and each row represents a major release
+In the **MongoDB Compatibility** table, each column represents a version of MongoDB server and each row represents a major release
 version of the driver.
 
 * A check mark (✓) means that the driver can use all features of that version of MongoDB server.
