@@ -1,50 +1,43 @@
+==========================
+About Driver Compatibility
+==========================
 
-We include compatibility tables for each version of the driver to guide
-your decisions on what versions you need to ensure your environment
-remains fully operational.
+Each MongoDB Driver includes two compatibility tables: one for MongoDB and one for the language the driver supports. Before performing an upgrade, use these tables to ensure your environment will remain operational. 
 
-We maintain the following tables for each driver:
-
-- :ref:`About MongoDB compatibility <mongodb-compatibility-table-about-{+driver+}>`
-- :ref:`About language compatibility <language-compatibility-table-about-{+driver+}>`
-
-Read the sections below for detailed explanations of each table.
+Read the following section for detailed explanations of each table.
 
 .. _mongodb-compatibility-table-about-{+driver+}:
 
-About MongoDB Compatibility
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MongoDB Compatibility Table
+---------------------------
 
-In the **MongoDB Compatibility** table, the columns are labeled with
-versions of MongoDB server and the rows are labeled with major release
-versions of the driver.
+In the **MongoDB Compatibility** table, each column represents a version of MongoDB server and each row represents a major release
+version of the driver.
 
-The check marks (✓) indicate that the driver can access **all the
-features** of that specific version of MongoDB server unless those features
-have been deprecated or removed.
+* A check mark (✓) means that the driver can use all features of that version of MongoDB server.
+* A circled asterisk (⊛) means that the driver works with that version of MongoDB server, but it can't use every new feature.
+* An empty cell means that the driver hasn't been tested with that version of MongoDB server.
 
-If you are **upgrading your server version**, your current driver should
-continue to function properly, but may not be able to access the features
-introduced in the newer server versions. We recommend using the newest
+.. important:: 
+    
+    Avoid using any driver version that isn't in the compatibility table.
+
+If you're **upgrading your server version**, your current driver will still work, but  you may not be able to use new MongoDB features. We recommend using the newest
 compatible driver when upgrading your server version.
 
-If you are **upgrading your driver version**, you can use the table to
-identify which version you need to access all the newest features included
-in a specific version of the server. Also note that any of the minor
-or patch versions share the same compatibility as the major version
-release.
+If you're **upgrading your driver version**, choose the newest version that's compatible with your version of MongoDB server. 
 
-We recommend that you avoid using older versions of the drivers that do not
-appear on the chart because they are unsupported.
+.. note::
+
+    Minor and patch versions have the same compatibility as their major version.
 
 .. _language-compatibility-table-about-{+driver+}:
 
-About Language Compatibility
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Language Compatibility Table
+----------------------------
 
-In the **Language Compatibility** table, the columns are labeled with
-versions of the language (e.g. Node.js, Python, etc.) and the rows are
-labeled with major release versions of the driver.
+In the **Language Compatibility** table, each column represents a version of the driver language (e.g., Node.js or Python) and each row represents a major release
+version of the driver.
 
-The check marks (✓) indicate that the code in the driver is fully
-compatible with the version of the language.
+* A check mark (✓) means that the driver is fully compatible with that version of the language.
+* An empty cell means that the driver hasn't been tested with that version of the language.
