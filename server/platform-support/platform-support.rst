@@ -291,7 +291,7 @@
 
    * - Windows Server 2008R2/2012/2012R2
      - x86_64
-     - Community
+     - Enterprise
      - 
      - 
      - 
