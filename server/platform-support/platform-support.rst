@@ -109,6 +109,24 @@
      - |checkmark|
      - |checkmark|
 
+   * - RHEL/CentOS/Oracle Linux/Rocky/Alma 9.0+
+     - x86_64
+     - Enterprise
+     - 6.0.3+
+     -
+     -
+     -
+     -
+
+   * - RHEL/CentOS/Oracle Linux/Rocky/Alma 9.0+
+     - x86_64
+     - Community
+     - 6.0.3+
+     -
+     -
+     -
+     -
+   
    * - RHEL/CentOS/Oracle Linux/Rocky/Alma 8.0+
      - x86_64
      - Enterprise
