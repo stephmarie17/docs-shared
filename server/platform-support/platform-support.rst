@@ -468,24 +468,6 @@
      - 4.4.4+
      - 4.2.13+
      -
-
-   * - RHEL/CentOS/Rocky/Alma 9
-     - arm64
-     - Enterprise
-     - 6.0.4+
-     -
-     -
-     -
-     -
-
-   * - RHEL/CentOS/Rocky/Alma 9
-     - arm64
-     - Community
-     - 6.0.4+
-     -
-     -
-     -
-     -
    
    * - RHEL/CentOS/Rocky/Alma 8
      - arm64
@@ -505,6 +487,24 @@
      -
      -
 
+   * - Ubuntu 22.04
+     - arm64
+     - Enterprise
+     - 6.0.4+
+     - |checkmark|
+     - |checkmark|
+     -
+     -
+
+   * - Ubuntu 22.04
+     - arm64
+     - Community
+     - 6.0.4+
+     - |checkmark|
+     - |checkmark|
+     -
+     -
+   
    * - Ubuntu 20.04
      - arm64
      - Enterprise
