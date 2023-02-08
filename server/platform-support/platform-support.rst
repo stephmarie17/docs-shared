@@ -491,8 +491,8 @@
      - arm64
      - Enterprise
      - 6.0.4+
-     - |checkmark|
-     - |checkmark|
+     -
+     -
      -
      -
 
@@ -500,8 +500,8 @@
      - arm64
      - Community
      - 6.0.4+
-     - |checkmark|
-     - |checkmark|
+     -
+     -
      -
      -
    
