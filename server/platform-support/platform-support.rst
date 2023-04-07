@@ -17,7 +17,25 @@
      - 5.0     
      - 4.4      
      - 4.2      
-     - 4.0      
+     - 4.0   
+
+   * - Amazon Linux 2022
+     - x86_64
+     - Enterprise
+     - 6.2.0+
+     - 
+     - 
+     -
+     - 
+
+   * - Amazon Linux 2022
+     - x86_64
+     - Community
+     - 6.2.0+
+     - 
+     - 
+     -
+     - 
 
    * - Amazon Linux V2
      - x86_64
@@ -468,6 +486,24 @@
      - 
      - 
      - 
+
+   * - Amazon Linux 2022
+     - arm64
+     - Community
+     - 6.2.0+ 
+     -
+     -
+     -
+     -
+
+   * - Amazon Linux 2022
+     - arm64
+     - Enterprise
+     - 6.2.0+ 
+     -
+     -
+     -
+     -
 
    * - Amazon Linux 2
      - arm64
