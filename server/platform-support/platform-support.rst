@@ -489,7 +489,7 @@
 
    * - Amazon Linux 2022
      - arm64
-     - Community
+     - Enterprise
      - 6.2.0+ 
      -
      -
@@ -498,7 +498,7 @@
 
    * - Amazon Linux 2022
      - arm64
-     - Enterprise
+     - Community
      - 6.2.0+ 
      -
      -
