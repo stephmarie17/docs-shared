@@ -616,7 +616,7 @@
    * - RHEL/CentOS 7
      - ppc64le
      - Enterprise
-     - |checkmark|
+     - 
      - 
      - |checkmark| 
      - |checkmark| 
