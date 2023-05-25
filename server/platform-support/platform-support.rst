@@ -504,7 +504,25 @@
      - 4.4.4+
      - 4.2.13+
      -
-   
+
+   * - RHEL/CentOS/Rocky/Alma 9
+     - arm64
+     - Enterprise
+     - |checkmark|
+     -
+     - 
+     -
+     -
+
+   * - RHEL/CentOS/Rocky/Alma 9
+     - arm64
+     - Community
+     - |checkmark|
+     -
+     - 
+     -
+     -
+
    * - RHEL/CentOS/Rocky/Alma 8
      - arm64
      - Enterprise
