@@ -1,7 +1,7 @@
 .. important:: v4.2 End of Life
 
    v4.2 reached end of life on April 30, 2023 and is no longer 
-   officially supported by MongoDB.
+   supported by MongoDB.
 
 
 .. list-table::
