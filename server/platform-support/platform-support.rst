@@ -686,6 +686,15 @@
      - |checkmark| 
      - 4.2.7+
 
+   * - RHEL/CentOS 7
+     - ppc64le
+     - Enterprise
+     - 
+     - |checkmark|
+     - |checkmark| 
+     - |checkmark| 
+     - |checkmark|
+
    * - Ubuntu 18.04
      - ppc64le
      - Enterprise
