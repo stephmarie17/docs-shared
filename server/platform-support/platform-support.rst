@@ -416,6 +416,24 @@
      - |checkmark|
      - |checkmark|
 
+   * - macOS 13
+     - x86_64 
+     - Enterprise 
+     - |checkmark|
+     - 
+     - 
+     - 
+     -
+    
+   * - macOS 13 
+     - x86_64
+     - Community
+     - |checkmark|
+     - 
+     -
+     -
+     -
+
    * - macOS 12 
      - x86_64 
      - Enterprise 
@@ -505,6 +523,43 @@
      -
      - |checkmark|
      - |checkmark|
+
+   * - macOS 13
+     - arm64 
+     - Enterprise 
+     - |checkmark|
+     - 
+     - 
+     - 
+     -
+    
+   * - macOS 13
+     - arm64
+     - Community
+     - |checkmark|
+     -
+     -
+     -
+     -
+
+
+   * - macOS 12
+     - arm64 
+     - Enterprise 
+     - |checkmark|
+     - |checkmark|
+     - 
+     - 
+     -
+    
+   * - macOS 12
+     - arm64
+     - Community
+     - |checkmark|
+     - |checkmark|
+     -
+     -
+     -
 
    * - macOS 11
      - arm64
