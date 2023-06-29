@@ -745,7 +745,7 @@
      - ppc64le
      - Enterprise
      - 
-     - |checkmark|
+     - 6.0.7+
      - |checkmark| 
      - |checkmark| 
      - |checkmark|
