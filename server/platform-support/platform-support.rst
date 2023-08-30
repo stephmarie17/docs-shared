@@ -16,7 +16,7 @@
      - x86_64
      - Enterprise
      - |checkmark|
-     - 6.2.0+
+     -
      - 
      - 
 
@@ -24,7 +24,7 @@
      - x86_64
      - Community
      - |checkmark|
-     - 6.2.0+
+     -
      - 
      - 
 
@@ -50,19 +50,19 @@
      - |checkmark|
      - 
      - 
+     -
+
+   * - Debian 12
+     - x86_64
+     - Community
+     - |checkmark|
      - 
+     - 
+     -  
   
    * - Debian 11
      - x86_64
      - Enterprise
-     - |checkmark| 
-     - |checkmark|
-     - 5.0.8+
-     - 
-
-   * - Debian 11
-     - x86_64
-     - Enterprise
      - |checkmark|
      - |checkmark|
      - 5.0.8+
@@ -108,7 +108,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - Oracle Linux (Red Hat Compatible Kernel only) 9.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 9.0+ [#oracle-support]_
      - x86_64
      - Enterprise
      - |checkmark|
@@ -116,71 +116,7 @@
      -
      -
 
-   * - Oracle Linux (Red Hat Compatible Kernel only) 9.0+
-     - x86_64
-     - Community
-     - |checkmark|
-     - 6.0.4+
-     -
-     -
-   
-   * - Oracle Linux (Red Hat Compatible Kernel only) 8.0+
-     - x86_64
-     - Enterprise
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-
-   * - Oracle Linux (Red Hat Compatible Kernel only) 8.0+
-     - x86_64
-     - Community
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-
-   * - Oracle Linux (Red Hat Compatible Kernel only) 7.0+
-     - x86_64
-     - Enterprise
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-
-   * - Oracle Linux (Red Hat Compatible Kernel only) 7.0+
-     - x86_64
-     - Community
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-
-   * - Oracle Linux (Red Hat Compatible Kernel only) 6.2+
-     - x86_64
-     - Enterprise
-     -
-     -
-     -
-     - |checkmark|
-
-   * - Oracle Linux (Red Hat Compatible Kernel only) 6.2+
-     - x86_64
-     - Community
-     -
-     -
-     -
-     - |checkmark|
-
-   * - RHEL/CentOS Stream Linux/Rocky/Alma 9.0+
-     - x86_64
-     - Enterprise
-     - |checkmark|
-     - 6.0.4+
-     -
-     -
-
-   * - RHEL/CentOS Stream Linux/Rocky/Alma 9.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 9.0+ [#oracle-support]_
      - x86_64
      - Community
      - |checkmark|
@@ -188,7 +124,7 @@
      -
      -
    
-   * - RHEL/CentOS Stream Linux/Rocky/Alma 8.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 8.0+ [#oracle-support]_
      - x86_64
      - Enterprise
      - |checkmark|
@@ -196,7 +132,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Stream Linux/Rocky/Alma 8.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 8.0+ [#oracle-support]_
      - x86_64
      - Community
      - |checkmark|
@@ -204,7 +140,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Linux 7.0+
+   * - RHEL/CentOS/Oracle Linux 7.0+ [#oracle-support]_
      - x86_64
      - Enterprise
      - |checkmark|
@@ -212,7 +148,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Linux 7.0+
+   * - RHEL/CentOS/Oracle Linux 7.0+ [#oracle-support]_
      - x86_64
      - Community
      - |checkmark|
@@ -220,7 +156,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Linux 6.2+
+   * - RHEL/CentOS/Oracle Linux 6.2+ [#oracle-support]_
      - x86_64
      - Enterprise
      -
@@ -228,7 +164,7 @@
      -
      - |checkmark|
 
-   * - RHEL/CentOS Linux 6.2+
+   * - RHEL/CentOS/Oracle Linux 6.2+ [#oracle-support]_
      - x86_64
      - Community
      -
@@ -379,38 +315,6 @@
      - |checkmark|
      - |checkmark|
      - |checkmark|
-
-   * - Windows 7/8/8.1
-     - x86_64
-     - Enterprise
-     -
-     - 
-     - 
-     - 
-
-   * - Windows 7/8/8.1
-     - x86_64
-     - Community
-     -
-     - 
-     - 
-     - 
-
-   * - Windows Server 2008R2/2012/2012R2
-     - x86_64
-     - Enterprise
-     -
-     - 
-     - 
-     -
-
-   * - Windows Server 2008R2/2012/2012R2
-     - x86_64
-     - Community
-     -
-     - 
-     - 
-     -
 
    * - Windows 10 / Server 2016
      - x86_64
@@ -576,7 +480,7 @@
      - arm64
      - Enterprise
      - |checkmark|
-     - 6.2.0+ 
+     -
      -
      -
 
@@ -584,7 +488,7 @@
      - arm64
      - Community
      - |checkmark|
-     - 6.2.0+ 
+     -
      -
      -
 
@@ -692,14 +596,6 @@
      - 
      - |checkmark|
 
-   * - Ubuntu 16.04
-     - arm64
-     - Community
-     -
-     -
-     -
-     - 
-
    * - RHEL/CentOS Stream/Rocky/Alma 9
      - ppc64le
      - Enterprise
@@ -724,29 +620,13 @@
      - |checkmark| 
      - |checkmark|
 
-   * - Ubuntu 18.04
-     - ppc64le
-     - Enterprise
-     -
-     -
-     - 
-     - 4.4.0 - 4.4.10
-
    * - RHEL/CentOS Stream/Rocky/Alma 9
      - s390x
      - Enterprise
      - |checkmark|
      - 
      - 
-     - 
-
-   * - RHEL/CentOS Stream/Rocky/Alma 9
-     - s390x
-     - Community
-     - 
-     - 
-     - 
-     - 
+     -
 
    * - RHEL/CentOS Stream/Rocky/Alma 8
      - s390x
@@ -754,15 +634,7 @@
      - |checkmark|
      - |checkmark|
      - 5.0.9+
-     - 
-
-   * - RHEL/CentOS Stream/Rocky/Alma 8
-     - s390x
-     - Community
-     - 
-     - 
-     - 
-     - 
+     -
 
    * - RHEL/CentOS 7
      - s390x
@@ -780,50 +652,5 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS 6
-     - s390x
-     - Enterprise
-     -
-     -
-     - 
-     - 
-
-   * - RHEL/CentOS 6
-     - s390x
-     - Community
-     -
-     -
-     -
-     -
-
-   * - SLES 12
-     - s390x
-     - Enterprise
-     -
-     -
-     -
-     - 4.4.0 - 4.4.6
-
-   * - SLES 12
-     - s390x
-     - Community
-     -
-     -
-     -
-     - 4.4.0 - 4.4.6 
-
-   * - Ubuntu 18.04
-     - s390x
-     - Enterprise
-     -
-     -
-     -
-     - 4.4.0 - 4.4.6
-
-   * - Ubuntu 18.04
-     - s390x
-     - Community
-     -
-     -
-     -
-     - 4.4.0 - 4.4.6
+.. [#oracle-support] On Oracle Linux, MongoDB only supports the Red Hat
+   Compatible Kernel.
