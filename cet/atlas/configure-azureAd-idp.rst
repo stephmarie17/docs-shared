@@ -79,7 +79,7 @@ Active Directory)`:
 
          .. step:: In the :guilabel:`Add optional claim` modal, select :guilabel:`Access`.
          
-         .. step:: Select a claim that carries user identifier that you can
+         .. step:: Select a claim that carries a user identifier that you can
             refer to in MongoDB access logs such as an email.
          
          .. step:: Click :guilabel:`Add`.
