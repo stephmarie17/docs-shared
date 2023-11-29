@@ -6,8 +6,8 @@ We are lucky to have a vibrant developer community that includes users that
 have various levels of experience using the {+driver-short+}. The quickest way
 to get support for general questions is through the `MongoDB Community Forums <https://www.mongodb.com/community/forums/>`__.
 
-To learn more about our support channels, see :manual:`</support/>` in the
-MongoDB Server documentation.
+To learn more about our support channels, see :manual:`Technical Support </support/>`
+in the MongoDB Server documentation.
 
 Bugs / Feature Requests
 -----------------------
