@@ -1,6 +1,6 @@
-==============
-Encrypt Fields
-==============
+=================
+In-Use Encryption
+=================
 
 .. contents:: On this page
    :local:
