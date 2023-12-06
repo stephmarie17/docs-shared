@@ -1,15 +1,3 @@
-|connection-troubleshooting-anchor|
-
-==========================
-Connection Troubleshooting
-==========================
-
-.. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 2
-   :class: singlecol
-
 This page offers potential solutions to issues that you might encounter
 when using the {+driver-long+} to connect to a MongoDB deployment.
 
