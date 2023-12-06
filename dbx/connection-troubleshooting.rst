@@ -1,3 +1,5 @@
+|connection-troubleshooting-anchor|
+
 ==========================
 Connection Troubleshooting
 ==========================
@@ -11,12 +13,7 @@ Connection Troubleshooting
 This page offers potential solutions to issues that you might encounter
 when using the {+driver-long+} to connect to a MongoDB deployment.
 
-.. note::
-
-   This page addresses only connection issues. If you encounter other types of
-   issues with MongoDB or the driver, visit the following resources:
-
-   |non-connection-issue-list|
+|non-connection-issue-callout|
 
 Server Connection Errors
 ------------------------
