@@ -44,10 +44,11 @@ MongoDB offers the following features to enable in-use encryption:
 Queryable Encryption
 ~~~~~~~~~~~~~~~~~~~~
 
-Queryable Encryption (QE) is the next-generation in-use encryption feature,
+Queryable Encryption is the next-generation in-use encryption feature,
 first introduced as a preview feature in MongoDB Server version 6.0 and
-as a generally available (GA) feature in MongoDB 7.0. QE supports searching
-encrypted fields for equality and encrypts each value uniquely.
+as a generally available (GA) feature in MongoDB 7.0. Queryable
+Encryption supports searching encrypted fields for equality and encrypts
+each value uniquely.
 
 .. important:: Preview Feature Incompatible with MongoDB 7.0
    
@@ -83,8 +84,6 @@ susceptible to code breaking by frequency analysis.
 
    - :wikipedia:`Cardinality <w/index.php?title=Cardinality_(data_modeling)&oldid=1182661589>`
    - :wikipedia:`Frequency Analysis <w/index.php?title=Frequency_analysis&oldid=1182536787>`
-
-See the following Server documentation to learn more about CSFLE topics:
 
 To learn more about CSFLE, see the :manual:`CSFLE </core/csfle/>`
 documentation in the Server manual.
