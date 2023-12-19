@@ -17,13 +17,13 @@ your application to encrypt data *before* sending it to MongoDB
 and query documents with encrypted fields.
 
 In-use encryption prevents unauthorized users from viewing plaintext
-data as it is sent to MongoDB or when it is in an encrypted database. To
-enable in-use encryption in an application and authroize it to decrypt
-data, you must create encryption keys that only your application has
-access to. Only these applications that have access to your encryption
-keys can access the decrypted, plaintext data. This means that in the
-event of a security breach, a potential attacker sees only encrypted,
-ciphertext data as they do not have access to the encryption keys.
+data as it is sent to MongoDB or while it is in an encrypted database. To
+enable in-use encryption in an application and authorize it to decrypt
+data, you must create encryption keys that only your application can
+access. Only applications that have access to your encryption
+keys can access the decrypted, plaintext data. If an attacker gains
+access to the database, they can only see the encrypted ciphertext data
+because they lack access to the encryption keys.
 
 You might use in-use encryption to encrypt fields in your MongoDB
 documents that contain the following types of sensitive data:
@@ -54,8 +54,8 @@ each value uniquely.
    
    The implementation of Queryable Encryption in MongoDB 6.0 is incompatible with the GA version introduced in MongoDB 7.0. The Queryable Encryption preview feature is no longer supported.
 
-To learn more about Queryable Encryption, see the :manual:`Queryable
-Encryption </core/queryable-encryption/>` documentation in the Server manual.
+To learn more about Queryable Encryption, see :manual:`Queryable
+Encryption </core/queryable-encryption/>` in the Server manual.
 
 .. _subsection-csfle:
 
@@ -65,17 +65,18 @@ Client-side Field Level Encryption
 Client-side Field Level Encryption (CSFLE) was introduced in MongoDB
 Server version 4.2 and supports searching encrypted fields for equality.
 CSFLE differs from Queryable Encryption in that you can select either a
-deterministic or random encryption algorithm to encrypt fields. You only
+deterministic or random encryption algorithm to encrypt fields. You can only
 query encrypted fields that use a deterministic encryption algorithm when
 using CSFLE. When you use a random encryption algorithm to encrypt
-fields in CSFLE, they can be decrypted but are not queryable. When you use
-Queryable Encryption, you cannot specify the encryption algorithm, but
-you can query on all encrypted fields.
+fields in CSFLE, they can be decrypted, but you cannot perform equality
+queries on those fields. When you use Queryable Encryption, you cannot
+specify the encryption algorithm, but you can query all encrypted
+fields.
 
 When you deterministically encrypt a value, the same input value
-produces the same output value. While deterministic encryption provides
-better support for read operations, encrypted data with low cardinality is
-susceptible to code breaking by frequency analysis.
+produces the same output value. While deterministic encryption allows
+you to perform queries on those encrypted fields, encrypted data with
+low cardinality is susceptible to code breaking by frequency analysis.
 
 .. tip::
 
@@ -85,5 +86,5 @@ susceptible to code breaking by frequency analysis.
    - :wikipedia:`Cardinality <w/index.php?title=Cardinality_(data_modeling)&oldid=1182661589>`
    - :wikipedia:`Frequency Analysis <w/index.php?title=Frequency_analysis&oldid=1182536787>`
 
-To learn more about CSFLE, see the :manual:`CSFLE </core/csfle/>`
-documentation in the Server manual.
+To learn more about CSFLE, see :manual:`CSFLE </core/csfle/>` in the
+Server manual.
