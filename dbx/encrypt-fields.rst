@@ -11,19 +11,22 @@ In-Use Encryption
 Overview
 --------
 
-You can encrypt fields in a document using a set of features called
-**in-use encryption**.
+You can use the {+driver-short+} to encrypt specific document fields by using a
+set of features called **in-use encryption**. In-use encryption allows
+your application to encrypt data *before* sending it to MongoDB
+and query documents with encrypted fields.
 
-In-use encryption enables your client applications to encrypt data
-*before* sending it to MongoDB, and to query documents with encrypted fields.
+In-use encryption prevents unauthorized users from viewing plaintext
+data as it is sent to MongoDB or while it is in an encrypted database. To
+enable in-use encryption in an application and authorize it to decrypt
+data, you must create encryption keys that only your application can
+access. Only applications that have access to your encryption
+keys can access the decrypted, plaintext data. If an attacker gains
+access to the database, they can only see the encrypted ciphertext data
+because they lack access to the encryption keys.
 
-Because the driver encrypts the data before sending it to MongoDB, only
-your configured client applications can decrypt the data. Only applications
-using the driver with access to your encryption keys can access the decrypted,
-plaintext data. Should you have unauthorized access to your database, an
-attacker could only see the encrypted, ciphertext data.
-
-In-use encryption can help prevent exposure of the following sensitive types of data:
+You might use in-use encryption to encrypt fields in your MongoDB
+documents that contain the following types of sensitive data:
 
 - Credit card numbers
 - Addresses
@@ -31,38 +34,57 @@ In-use encryption can help prevent exposure of the following sensitive types of 
 - Financial information
 - Any other sensitive or personally identifiable information (PII)
 
-MongoDB offers the following ways to encrypt fields:
+MongoDB offers the following features to enable in-use encryption:
+
+- :ref:`Queryable Encryption <subsection-qe>`
+- :ref:`Client-side Field Level Encryption <subsection-csfle>`
+
+.. _subsection-qe:
 
 Queryable Encryption
 ~~~~~~~~~~~~~~~~~~~~
 
 Queryable Encryption is the next-generation in-use encryption feature,
-introduced in MongoDB Server version 6.0 and available as a public
-preview. Queryable Encryption supports searching encrypted fields for
-equality and encrypts each value uniquely.
+first introduced as a preview feature in MongoDB Server version 6.0 and
+as a generally available (GA) feature in MongoDB 7.0. Queryable
+Encryption supports searching encrypted fields for equality and encrypts
+each value uniquely.
 
-The MongoDB manual contains detailed information on the following Queryable Encryption topics:
+.. important:: Preview Feature Incompatible with MongoDB 7.0
+   
+   The implementation of Queryable Encryption in MongoDB 6.0 is incompatible with the GA version introduced in MongoDB 7.0. The Queryable Encryption preview feature is no longer supported.
 
-- To get started, see the :ref:`Queryable Encryption Quick Start <qe-quick-start>`.
-- To learn how to use Queryable Encryption, see the :ref:`Queryable Encryption Fundamentals <qe-fundamentals>`.
-- To learn how to integrate your implementation with a Key Management System, see the :ref:`Queryable Encryption Tutorials <qe-tutorials>`.
-- To learn Queryable Encryption concepts, see the :ref:`Queryable Encryption Reference <qe-reference>`.
+To learn more about Queryable Encryption, see :manual:`Queryable
+Encryption </core/queryable-encryption/>` in the Server manual.
+
+.. _subsection-csfle:
 
 Client-side Field Level Encryption
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Client-side Field Level Encryption (CSFLE) was introduced in MongoDB
 Server version 4.2 and supports searching encrypted fields for equality.
-CSFLE differs from Queryable Encryption in that it requires that the encrypted fields
-you want to search must be deterministically encrypted. When you
-deterministically encrypt a value, the same input value produces the
-same output value. While deterministic encryption provides greater 
-support for read operations, encrypted data with low :wikipedia:`cardinality <Cardinality>`
-is susceptible to recovery using :wikipedia:`frequency analysis <Frequency_analysis>`.
+CSFLE differs from Queryable Encryption in that you can select either a
+deterministic or random encryption algorithm to encrypt fields. You can only
+query encrypted fields that use a deterministic encryption algorithm when
+using CSFLE. When you use a random encryption algorithm to encrypt
+fields in CSFLE, they can be decrypted, but you cannot perform equality
+queries on those fields. When you use Queryable Encryption, you cannot
+specify the encryption algorithm, but you can query all encrypted
+fields.
 
-The MongoDB manual contains detailed information on the following CSFLE topics:
+When you deterministically encrypt a value, the same input value
+produces the same output value. While deterministic encryption allows
+you to perform queries on those encrypted fields, encrypted data with
+low cardinality is susceptible to code breaking by frequency analysis.
 
-- To get started, see the :ref:`CSFLE Quick Start <csfle-quick-start>`.
-- To learn how to use CSFLE, see the :ref:`CSFLE Fundamentals <csfle-fundamentals>`.
-- To learn how to integrate your CSFLE implementation with a Key Management System, see the :ref:`CSFLE Tutorials <csfle-tutorials>`.
-- To learn CSFLE concepts, see the :ref:`CSFLE Reference <csfle-reference>`.
+.. tip::
+
+   To learn more about these concepts, see the following Wikipedia
+   entries:
+
+   - :wikipedia:`Cardinality <w/index.php?title=Cardinality_(data_modeling)&oldid=1182661589>`
+   - :wikipedia:`Frequency Analysis <w/index.php?title=Frequency_analysis&oldid=1182536787>`
+
+To learn more about CSFLE, see :manual:`CSFLE </core/csfle/>` in the
+Server manual.
