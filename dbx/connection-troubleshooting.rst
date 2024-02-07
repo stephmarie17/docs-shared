@@ -33,8 +33,8 @@ one of the hosts is unreachable.
 
 |configure-firewall-anchor|
 
-Configure Firewall
-~~~~~~~~~~~~~~~~~~
+Configure the Firewall
+~~~~~~~~~~~~~~~~~~~~~~
 
 If your MongoDB deployment is hosted behind a firewall, ensure the port
 on which MongoDB listens is open in the firewall. If your deployment
@@ -98,6 +98,8 @@ they are correctly formatted.
       : / ? # [ ] @
 
    Use your percent-encoded username and password in your connection string.
+
+|percent-encode-example|
 
 |verify-authentication-mechanism-anchor|
 
