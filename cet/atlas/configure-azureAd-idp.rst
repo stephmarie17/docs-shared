@@ -1,5 +1,4 @@
-To register your |oidc| or OAuth application with :abbr:`Azure AD (Azure
-Active Directory)`:
+To register your |oidc| or OAuth application with Microsoft Entra ID:
 
 .. procedure::
    :style: normal
@@ -14,7 +13,7 @@ Active Directory)`:
             .. procedure::
                :style: connected
 
-               .. step:: In your `Azure portal <https://portal.azure.com/>`__ account, search and click :guilabel:`Azure Active Directory`.
+               .. step:: In your `Azure portal <https://portal.azure.com/>`__ account, search and click :guilabel:`Microsoft Entra ID`.
 
                .. step:: In the :guilabel:`Manage` section of the left navigation, click :guilabel:`App registrations`.
          
@@ -125,15 +124,14 @@ Active Directory)`:
             :guilabel:`OpenID Connect metadata document` |url| and
             copying the value for ``issuer``.
 
-      The following table shows what these :abbr:`Azure AD (Azure Active
-      Directory)` UI values map to in our |service| Configuration Properties:
+      The following table shows what these Microsoft Entra ID UI values map to in our |service| Configuration Properties:
       
       .. list-table::
          :header-rows: 1
          :widths: 50 50
          :stub-columns: 1
 
-         * - :abbr:`Azure AD (Azure Active Directory)` UI 
+         * - Microsoft Entra ID UI 
            - |service| Configuration Property
 
          * - :guilabel:`Application (client) ID` 
