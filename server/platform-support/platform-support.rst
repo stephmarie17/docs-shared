@@ -108,7 +108,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 9.0+ [#oracle-support]_
+   * - RHEL/Rocky/Alma/Oracle Linux 9.0+ [#oracle-support]_
      - x86_64
      - Enterprise
      - |checkmark|
@@ -116,7 +116,7 @@
      -
      -
 
-   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 9.0+ [#oracle-support]_
+   * - RHEL/Rocky/Alma/Oracle Linux 9.0+ [#oracle-support]_
      - x86_64
      - Community
      - |checkmark|
@@ -124,7 +124,7 @@
      -
      -
    
-   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 8.0+ [#oracle-support]_
+   * - RHEL/Rocky/Alma/Oracle Linux 8.0+ [#oracle-support]_
      - x86_64
      - Enterprise
      - |checkmark|
@@ -132,7 +132,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 8.0+ [#oracle-support]_
+   * - RHEL/Rocky/Alma/Oracle Linux 8.0+ [#oracle-support]_
      - x86_64
      - Community
      - |checkmark|
@@ -596,7 +596,7 @@
      - 
      - |checkmark|
 
-   * - RHEL/CentOS Stream/Rocky/Alma 9
+   * - RHEL/Rocky/Alma 9
      - ppc64le
      - Enterprise
      - |checkmark|
@@ -604,7 +604,7 @@
      -
      -
 
-   * - RHEL/CentOS Stream/Rocky/Alma 8
+   * - RHEL/Rocky/Alma 8
      - ppc64le
      - Enterprise
      - |checkmark|
@@ -620,7 +620,7 @@
      - |checkmark| 
      - |checkmark|
 
-   * - RHEL/CentOS Stream/Rocky/Alma 9
+   * - RHEL/Rocky/Alma 9
      - s390x
      - Enterprise
      - |checkmark|
@@ -628,7 +628,7 @@
      - 
      -
 
-   * - RHEL/CentOS Stream/Rocky/Alma 8
+   * - RHEL/Rocky/Alma 8
      - s390x
      - Enterprise
      - |checkmark|
