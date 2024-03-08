@@ -1,138 +1,138 @@
-   .. step:: Configure your SAML integration.
+.. step:: Configure your SAML integration.
 
-      .. procedure::
-         :style: connected
+   .. procedure::
+      :style: connected
 
-         .. step:: In your |idp-provider| account, return to the page
-            for your SAML application and ensure the :guilabel:`General`
-            tab is selected.
+      .. step:: In your |idp-provider| account, return to the page
+	 for your SAML application and ensure the :guilabel:`General`
+	 tab is selected.
 
-         .. step:: In the :guilabel:`SAML Settings` pane, click
-            :guilabel:`Edit`. 
-            
-            On the :guilabel:`General Settings` page, click
-            :guilabel:`Next`.
+      .. step:: In the :guilabel:`SAML Settings` pane, click
+	 :guilabel:`Edit`. 
 
-         .. step:: On the :guilabel:`Configure SAML` screen, enter the
-            following information:
+	 On the :guilabel:`General Settings` page, click
+	 :guilabel:`Next`.
 
-            .. list-table::
-               :widths: 20 40
-               :header-rows: 1
+      .. step:: On the :guilabel:`Configure SAML` screen, enter the
+	 following information:
 
-               * - Okta Data Field
-                 - Value
+	 .. list-table::
+	    :widths: 20 40
+	    :header-rows: 1
 
-               * - :guilabel:`Single sign on URL`
-                 - :guilabel:`Assertion Consumer Service URL` from the
-                   |service| FMC.
+	    * - Okta Data Field
+	      - Value
 
-                   Checkboxes:
+	    * - :guilabel:`Single sign on URL`
+	      - :guilabel:`Assertion Consumer Service URL` from the
+		|service| FMC.
 
-                   - Check :guilabel:`Use this for Recipient URL and Destination URL`.
-                   - Clear :guilabel:`Allow this app to request other SSO URLs`.
+		Checkboxes:
 
-               * - :guilabel:`Audience URI (SP Entity ID)`
-                 - :guilabel:`Audience URI` from the |service| FMC.
+		- Check :guilabel:`Use this for Recipient URL and Destination URL`.
+		- Clear :guilabel:`Allow this app to request other SSO URLs`.
 
-               * - :guilabel:`Default RelayState`
-                 - .. include:: /includes/optional-idp-relay-state-step.rst
+	    * - :guilabel:`Audience URI (SP Entity ID)`
+	      - :guilabel:`Audience URI` from the |service| FMC.
 
-               * - :guilabel:`Name ID format`
-                 - Unspecified
+	    * - :guilabel:`Default RelayState`
+	      - .. include:: /includes/optional-idp-relay-state-step.rst
 
-               * - :guilabel:`Application username`
-                 - Email
+	    * - :guilabel:`Name ID format`
+	      - Unspecified
 
-               * - :guilabel:`Update application username on`
-                 - Create and update
+	    * - :guilabel:`Application username`
+	      - Email
 
-         .. step:: Click the :guilabel:`Click Show Advanced Settings` link in the
-            Okta configuration page and ensure that the following values are
-            set:
+	    * - :guilabel:`Update application username on`
+	      - Create and update
 
-            .. list-table::
-               :widths: 20 40
-               :header-rows: 1
+      .. step:: Click the :guilabel:`Click Show Advanced Settings` link in the
+	 Okta configuration page and ensure that the following values are
+	 set:
 
-               * - Okta Data Field
-                 - Value
+	 .. list-table::
+	    :widths: 20 40
+	    :header-rows: 1
 
-               * - :guilabel:`Response`
-                 - ``Signed``
+	    * - Okta Data Field
+	      - Value
 
-               * - :guilabel:`Assertion Signature`
-                 - ``Signed``
+	    * - :guilabel:`Response`
+	      - ``Signed``
 
-               * - :guilabel:`Signature Algorithm`
-                 - ``RSA-SHA256``
+	    * - :guilabel:`Assertion Signature`
+	      - ``Signed``
 
-               * - :guilabel:`Digest Algorithm`
-                 - ``SHA256``
+	    * - :guilabel:`Signature Algorithm`
+	      - ``RSA-SHA256``
 
-               * - :guilabel:`Assertion Encryption`
-                 - ``Unencrypted``
+	    * - :guilabel:`Digest Algorithm`
+	      - ``SHA256``
 
-         .. step:: Leave the remaining :guilabel:`Advanced Settings` fields in their
-            default state.
+	    * - :guilabel:`Assertion Encryption`
+	      - ``Unencrypted``
 
-         .. step:: Scroll down to the :guilabel:`Attribute Statements (optional)`
-            section and create four attributes with the following values:
+      .. step:: Leave the remaining :guilabel:`Advanced Settings` fields in their
+	 default state.
 
-            .. list-table::
-               :widths: 20 40 40
-               :header-rows: 1
+      .. step:: Scroll down to the :guilabel:`Attribute Statements (optional)`
+	 section and create four attributes with the following values:
 
-               * - Name
-                 - Name Format
-                 - Value
+	 .. list-table::
+	    :widths: 20 40 40
+	    :header-rows: 1
 
-               * - firstName
-                 - Unspecified
-                 - ``user.firstName``
+	    * - Name
+	      - Name Format
+	      - Value
 
-               * - lastName
-                 - Unspecified
-                 - ``user.lastName``
+	    * - firstName
+	      - Unspecified
+	      - ``user.firstName``
 
-            .. important::
+	    * - lastName
+	      - Unspecified
+	      - ``user.lastName``
 
-               The values in the **Name** column are case-sensitive. Enter
-               them exactly as shown.
+	 .. important::
 
-            .. note::
+	    The values in the **Name** column are case-sensitive. Enter
+	    them exactly as shown.
 
-               These values may be different if Okta is connected to an Active
-               Directory. For the appropriate values, use the Active Directory
-               fields that contain a user's first name, last name, and full
-               email address.
+	 .. note::
 
-         .. step:: (Optional) If you plan to use 
-            :doc:`role mapping </security/manage-role-mapping/>`, 
-            scroll down to the 
-            :guilabel:`Group Attribute Statements (optional)` section 
-            and create an attribute with the following values:
+	    These values may be different if Okta is connected to an Active
+	    Directory. For the appropriate values, use the Active Directory
+	    fields that contain a user's first name, last name, and full
+	    email address.
 
-            .. list-table::
-               :widths: 25 25 25 25
-               :header-rows: 1
-                
-               * - Name
-                 - Name Format
-                 - Filter
-                 - Value
+      .. step:: (Optional) If you plan to use 
+	 :doc:`role mapping </security/manage-role-mapping/>`, 
+	 scroll down to the 
+	 :guilabel:`Group Attribute Statements (optional)` section 
+	 and create an attribute with the following values:
 
-               * - memberOf
-                 - Unspecified
-                 - Matches regex
-                 - ``.*``
+	 .. list-table::
+	    :widths: 25 25 25 25
+	    :header-rows: 1
 
-            This filter matches all group names associated with the user. 
-            To filter the group names sent to Atlas further, 
-            adjust the :guilabel:`Filter` and :guilabel:`Value` fields.
+	    * - Name
+	      - Name Format
+	      - Filter
+	      - Value
 
-         .. step:: Click :guilabel:`Next` at the bottom of the 
-            page.
+	    * - memberOf
+	      - Unspecified
+	      - Matches regex
+	      - ``.*``
 
-         .. step:: On the :guilabel:`Feedback` screen, 
-            click :guilabel:`Finish`.
+	 This filter matches all group names associated with the user. 
+	 To filter the group names sent to Atlas further, 
+	 adjust the :guilabel:`Filter` and :guilabel:`Value` fields.
+
+      .. step:: Click :guilabel:`Next` at the bottom of the 
+	 page.
+
+      .. step:: On the :guilabel:`Feedback` screen, 
+	 click :guilabel:`Finish`.

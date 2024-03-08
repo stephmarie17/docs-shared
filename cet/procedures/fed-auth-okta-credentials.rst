@@ -1,46 +1,46 @@
-   .. step:: Provide |idp-provider| credentials to |service|.
+.. step:: Provide |idp-provider| credentials to |service|.
 
-      .. procedure::
-         :style: connected
-        
-         .. step:: Click :guilabel:`Identity Providers` in the 
-            left-hand pane. If you have previously configured an |idp|,
-            click :guilabel:`Add Identity Provider` in the upper-right 
-            corner of the page, then click 
-            :guilabel:`Setup Identity Provider`. If you have not 
-            previously configured an |idp|, click 
-            :guilabel:`Setup Identity Provider`.
+   .. procedure::
+      :style: connected
 
-         .. step:: On the :guilabel:`Configure Identity Provider` 
-            screen, enter the following information:
+      .. step:: Click :guilabel:`Identity Providers` in the 
+	 left-hand pane. If you have previously configured an |idp|,
+	 click :guilabel:`Add Identity Provider` in the upper-right 
+	 corner of the page, then click 
+	 :guilabel:`Setup Identity Provider`. If you have not 
+	 previously configured an |idp|, click 
+	 :guilabel:`Setup Identity Provider`.
 
-            .. list-table::
-               :widths: 20 40
-               :header-rows: 1
+      .. step:: On the :guilabel:`Configure Identity Provider` 
+	 screen, enter the following information:
 
-               * - Field
-                 - Value
+	 .. list-table::
+	    :widths: 20 40
+	    :header-rows: 1
 
-               * - :guilabel:`Configuration Name`
-                 - Descriptive label that identifies the configuration
+	    * - Field
+	      - Value
 
-               * - :guilabel:`Issuer URI`
-                 - :guilabel:`Fill with Placeholder Values`
+	    * - :guilabel:`Configuration Name`
+	      - Descriptive label that identifies the configuration
 
-               * - :guilabel:`Single Sign-On URL`
-                 - :guilabel:`Fill with Placeholder Values`
+	    * - :guilabel:`Issuer URI`
+	      - :guilabel:`Fill with Placeholder Values`
 
-               * - :guilabel:`Identity Provider Signature Certificate`
-                 - Certificate you received from |idp-provider|
-                   in a prior step
+	    * - :guilabel:`Single Sign-On URL`
+	      - :guilabel:`Fill with Placeholder Values`
 
-               * - :guilabel:`Request Binding`
-                 - ``HTTP POST``
+	    * - :guilabel:`Identity Provider Signature Certificate`
+	      - Certificate you received from |idp-provider|
+		in a prior step
 
-               * - :guilabel:`Response Signature Algorithm`
-                 - ``SHA-256``
+	    * - :guilabel:`Request Binding`
+	      - ``HTTP POST``
 
-         .. step:: Click the :guilabel:`Next` button to see the values
-            for the |idp-provider| configuration.
+	    * - :guilabel:`Response Signature Algorithm`
+	      - ``SHA-256``
 
-         .. step:: Click :guilabel:`Finish`.
+      .. step:: Click the :guilabel:`Next` button to see the values
+	 for the |idp-provider| configuration.
+
+      .. step:: Click :guilabel:`Finish`.
