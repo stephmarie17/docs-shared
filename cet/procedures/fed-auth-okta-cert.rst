@@ -1,6 +1,3 @@
-.. procedure::
-   :style: normal
-
    .. step:: Download your |idp-provider| origination 
       certificate.
       
