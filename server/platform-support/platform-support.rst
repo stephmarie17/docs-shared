@@ -8,7 +8,7 @@
    :header-rows: 1
    :stub-columns: 1
    :class: compatibility
-   :widths: 20 20 20 10 10 10 10 
+   :widths: 20 20 20 10 10 10 10 10
 
    * - Platform
      - Architecture
