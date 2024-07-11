@@ -7,7 +7,7 @@ Validate Driver Artifact Signatures
    :values: tutorial
 
 .. meta::
-   :keywords: java, kotlin, security, SSDLC
+   :keywords: java, kotlin, security, SSDLC, encryption
 
 .. contents:: On this page
    :local:
@@ -31,23 +31,26 @@ signatures.
 .. procedure::
    :style: normal
 
-   .. step:: Install an Encryption Software
+   .. step:: Install Encryption Software
       
-      You must first install one of the following encryption suites:
+      You must first install the `GnuPG <https://gnupg.org/>`__ encryption suite to use GPG
+      on the command line. You can install GnuPG by using `Homebrew <https://formulae.brew.sh/formula/gnup>`__.
       
-      - `GnuPG <https://gnupg.org/>`__ (`Homebrew Installation <https://formulae.brew.sh/formula/gnup>`__)
-      - `GPG Suite <https://gpgtools.org>`__ (`Homebrew Installation <https://formulae.brew.sh/cask/gpg-suite>`__)
+      .. tip::
+         
+         You can also install `GPG Suite <https://gpgtools.org>`__, which provides a GUI to use GPG.
+         There is a `Homebrew installation <https://formulae.brew.sh/cask/gpg-suite>`__) for GPG Suite.
 
    .. step:: Download and Import the Public Key
       
-      Navigate to the driver source GitHub repository and view
+      Navigate to the MongoDB JVM drivers GitHub repository and view
       the `Releases <https://github.com/mongodb/mongo-java-driver/releases>`__ page.
       Each version release contains instructions on how to download and import the public key for
       verifying signatures.
 
    .. step:: Download the Signed File
 
-      In your terminal, run a ``curl`` command to download the signed
+      In your terminal, run the ``curl`` command to download the signed
       file corresponding to a version of the driver. For example,
       running the following command downloads the signed file for the
       v5.1.0 driver:
@@ -58,7 +61,7 @@ signatures.
 
    .. step:: Download the File Signature
       
-      In your terminal, run a ``curl`` command to download the file
+      In your terminal, run the ``curl`` command to download the file
       signature corresponding to a version of the driver. For example,
       running the following command downloads the file signature for the
       v5.1.0 driver:
