@@ -34,19 +34,19 @@ signatures.
    .. step:: Install Encryption Software
       
       You must first install the `GnuPG <https://gnupg.org/>`__ encryption suite to use GPG
-      on the command line. You can install GnuPG by using `Homebrew <https://formulae.brew.sh/formula/gnup>`__.
+      on the command line. You can install GnuPG by using `Homebrew <https://formulae.brew.sh/formula/gnupg>`__.
       
       .. tip::
          
-         You can also install `GPG Suite <https://gpgtools.org>`__, which provides a GUI to use GPG.
-         There is a `Homebrew installation <https://formulae.brew.sh/cask/gpg-suite>`__) for GPG Suite.
+         As an alternative, you can install `GPG Suite <https://gpgtools.org>`__,
+         which provides a GUI to use GPG. There is a `Homebrew installation <https://formulae.brew.sh/cask/gpg-suite>`__)
+         for GPG Suite.
 
    .. step:: Download and Import the Public Key
       
-      Navigate to the MongoDB JVM drivers GitHub repository and view
-      the `Releases <https://github.com/mongodb/mongo-java-driver/releases>`__ page.
-      Each version release contains instructions on how to download and import the public key for
-      verifying signatures.
+      Navigate to the `Releases <https://github.com/mongodb/mongo-java-driver/releases>`__ page
+      in the MongoDB JVM drivers GitHub repository. Each version release contains instructions on
+      how to download and import the public key for verifying signatures.
 
    .. step:: Download the Signed File
 
@@ -99,6 +99,3 @@ Additional Information
 To learn more about verifying signatures, see :manual:`Verify Integrity
 of MongoDB Packages </tutorial/verify-mongodb-packages/>` in the Server
 manual.
-
-To learn more about GnuPG, see the `GNU Privacy Handbook
-<https://gnupg.org/gph/en/manual/book1.html>`__.
