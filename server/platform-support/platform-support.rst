@@ -235,6 +235,24 @@
      - |checkmark|
      - |checkmark|
 
+   * - Ubuntu 24.04
+     - x86_64
+     - Enterprise
+     - |checkmark|
+     - 
+     - 
+     -
+     -
+
+   * - Ubuntu 24.04
+     - x86_64
+     - Community
+     - |checkmark|
+     - 
+     - 
+     -
+     -
+
    * - Ubuntu 22.04
      - x86_64
      - Enterprise
@@ -612,6 +630,24 @@
      - |checkmark|
      - |checkmark|
      - 4.4.4+
+
+   * - Ubuntu 24.04
+     - arm64
+     - Enterprise
+     - |checkmark|
+     - 
+     - 
+     -
+     -
+
+   * - Ubuntu 24.04
+     - arm64
+     - Community
+     - |checkmark|
+     - 
+     - 
+     -
+     -
 
    * - Ubuntu 22.04
      - arm64
