@@ -777,4 +777,3 @@
 
 .. [#oracle-support] On Oracle Linux, MongoDB only supports the Red Hat
    Compatible Kernel.
-
