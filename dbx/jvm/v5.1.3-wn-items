@@ -1,2 +1,2 @@
-- Fixes an issue that that caused assertion errors when using ``Cursor``
+- Fixes an issue that could cause assertion errors when using ``Cursor``
   types.
