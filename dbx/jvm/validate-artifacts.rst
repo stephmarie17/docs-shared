@@ -39,7 +39,7 @@ signatures.
       .. tip::
          
          As an alternative, you can install `GPG Suite <https://gpgtools.org>`__,
-         which provides a GUI to use GPG. There is a `Homebrew installation <https://formulae.brew.sh/cask/gpg-suite>`__)
+         which provides a GUI to use GPG. There is a `Homebrew installation <https://formulae.brew.sh/cask/gpg-suite>`__
          for GPG Suite.
 
    .. step:: Download and Import the Public Key
