@@ -1,3 +1,4 @@
-- Creates the ``SearchIndexType`` class, allowing you to specify the
-  index type when creating an Atlas Search or Vector Search index. To
-  learn more, see |avs-index-link|.
+- Creates the ``SearchIndexType`` class, which you can pass
+  when constructing a ``SearchIndexModel`` instance. This type
+  allows you to specify the index type when creating an Atlas
+  Search or Vector Search index. To learn more, see |avs-index-link|.
