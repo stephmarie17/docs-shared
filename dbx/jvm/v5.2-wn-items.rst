@@ -4,6 +4,6 @@
   Search or Vector Search index. To learn more, see |avs-index-link|.
 
 - Fixes an issue that caused the ``InsertOneResult.getInsertedId()`` and
-  ``InsertManyResult.getInsertedIds()`` to return incorrect document IDs in
+  ``InsertManyResult.getInsertedIds()`` methods to return incorrect document IDs in
   some situations. This change is backported to {+driver-short+} v5.1.4
   and v4.11.4.
