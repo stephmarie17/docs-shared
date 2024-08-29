@@ -397,6 +397,22 @@
      - |checkmark|
      - |checkmark|
 
+   * - macOS14
+     - x86_64 
+     - Enterprise
+     - |checkmark|
+     -
+     -
+     -
+     -
+   * - macOS14
+     - x86_64 
+     - Community
+     - |checkmark|
+     -
+     -
+     -
+     -
    * - macOS 13
      - x86_64 
      - Enterprise 
@@ -505,6 +521,24 @@
      -
      - |checkmark|
 
+   * - macOS 14
+     - arm64 
+     - Enterprise 
+     - |checkmark|
+     -
+     - 
+     - 
+     -
+
+   * - macOS 14
+     - arm64 
+     - Community 
+     - |checkmark|
+     -
+     - 
+     - 
+     - 
+   
    * - macOS 13
      - arm64 
      - Enterprise 
