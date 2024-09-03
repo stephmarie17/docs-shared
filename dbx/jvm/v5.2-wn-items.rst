@@ -3,6 +3,12 @@
   allows you to specify the index type when creating an Atlas
   Search or Vector Search index. To learn more, see |avs-index-link|.
 
+- Delegates the implementation of the algorithms that implement
+  the ``SCRAM-SHA-1`` and ``SCRAM-SHA-256`` authentication mechanisms to
+  the configured JCA provider. This change means that your application
+  can use a configured FIPS-compliant JCA provider to provide a higher
+  level of security.
+
 - Fixes an issue that caused the ``InsertOneResult.getInsertedId()`` and
   ``InsertManyResult.getInsertedIds()`` methods to return incorrect document IDs in
   some situations. This change is backported to {+driver-short+} v5.1.4
