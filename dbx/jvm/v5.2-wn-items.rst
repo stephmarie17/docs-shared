@@ -8,3 +8,8 @@
   the configured JCA provider. This change means that your application
   can use a configured FIPS-compliant JCA provider to provide a higher
   level of security.
+
+- Fixes an issue that caused the ``InsertOneResult.getInsertedId()`` and
+  ``InsertManyResult.getInsertedIds()`` methods to return incorrect document IDs in
+  some situations. This change is backported to {+driver-short+} v5.1.4
+  and v4.11.4.
