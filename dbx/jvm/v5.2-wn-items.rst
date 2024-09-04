@@ -13,3 +13,7 @@
   ``InsertManyResult.getInsertedIds()`` methods to return incorrect document IDs in
   some situations. This change is backported to {+driver-short+} v5.1.4
   and v4.11.4.
+
+- When a sharded cluster operation is unsuccessful, the driver avoids selecting
+  the same ``mongos`` server for operation retry attempts if other ``mongos``
+  servers are available.  
