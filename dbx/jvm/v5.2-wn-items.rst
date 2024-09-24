@@ -19,9 +19,9 @@
   servers are available.
 
 - Adds reachability metadata needed when your application uses GraalVM
-  Native Image. You can use this metadata to save the effort of
+  Native Image. You can use this metadata instead of
   collecting reachability metadata needed when using the driver
-  libraries. To learn more, see `Reachability Metadata
+  libraries yourself. To learn more, see `Reachability Metadata
   <https://www.graalvm.org/latest/reference-manual/native-image/metadata/>`__
   in the GraalVM documentation.
 
