@@ -33,3 +33,18 @@
   <https://github.com/mongodb/mongo-java-driver/blob/master/graalvm-native-image-app/src/main/resources/META-INF/native-image/resource-config.json>`__
   file in the driver GitHub repository to see how to specify these entries explicitly
   if your application depends on the ``org.mongodb:mongodb-crypt`` library.
+
+- Enables exact vector search by extending the ``VectorSearchOptions`` API
+  to introduce the following specific option subtypes:
+
+  - ``ExactVectorSearchOptions``: Use this options type to enable
+    precise matching, ensuring that results are the closest vectors to a
+    given query vector.
+
+  - ``ApproximateVectorSearchOptions``: Use this options type to
+    enable searches that might not return the exact closest vectors. You
+    can pass a ``numCandidates`` parameter when instantiating this type
+    to specify the number of nearest neighbors to consider.
+
+  To learn more about using the Atlas Vector Search feature, see
+  |vector-search-link|.
