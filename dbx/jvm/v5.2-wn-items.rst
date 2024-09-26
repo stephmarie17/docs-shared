@@ -9,6 +9,34 @@
   can use a configured FIPS-compliant JCA provider to provide a higher
   level of security.
 
+- Performance improvements due to implementation of native cryptography
+  on all supported platforms. The following list describes the actions
+  needed to implement this improvement depending on your operating
+  system:
+  
+  - **Windows**: Upgrade your ``mongodb-crypt`` version to v5.2.0.
+
+  - **Mac**: Upgrade your ``mongodb-crypt`` version to v5.2.0.
+
+  - **Linux**: Install ``libmongocrypt.so`` directly on the file system,
+    instead of using the file that is bundled within the
+    ``mongodb-crypt`` JAR file. You can find Linux instructions to install
+    ``libmongocrypt`` in the :manual:`Server manual
+    </core/csfle/reference/libmongocrypt/#linux-installation>`. If you
+    use a package manager to install ``libmongocrypt``, Java Native
+    Access (JNA) will find it there without further configuration.
+    Alternatively, you can specify the search path by setting the
+    ``LD_LIBRARY_PATH`` environment variable to the file path of the
+    ``libmongocrypt`` package.
+    
+    We recommend direct installation because the bundled shared library
+    does not link with OpenSSL due to the potential for OpenSSL binary
+    incompatibilities.
+
+    The shared library loading is handled by JNA. You can view the rules for library
+    loading search path order in the `NativeLibrary class documentation
+    <https://java-native-access.github.io/jna/5.14.0/javadoc/com/sun/jna/NativeLibrary.html>`__.
+
 - Fixes an issue that caused the ``InsertOneResult.getInsertedId()`` and
   ``InsertManyResult.getInsertedIds()`` methods to return incorrect document IDs in
   some situations. This change is backported to {+driver-short+} v5.1.4
