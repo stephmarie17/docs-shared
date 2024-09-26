@@ -24,8 +24,8 @@
     ``libmongocrypt`` in the :manual:`Server manual
     </core/csfle/reference/libmongocrypt/#linux-installation>`. If you
     use a package manager to install ``libmongocrypt``, Java Native
-    Access (JNA) will find it there without further configuration. If
-    there is an issue, you can specify the search path by setting the
+    Access (JNA) will find it there without further configuration.
+    Alternatively, you can specify the search path by setting the
     ``LD_LIBRARY_PATH`` environment variable to the file path of the
     ``libmongocrypt`` package.
     
