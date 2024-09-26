@@ -9,6 +9,13 @@
   can use a configured FIPS-compliant JCA provider to provide a higher
   level of security.
 
+- Revises the ``mongodb-crypt`` dependency versioning to match the
+  versioning for the JVM drivers. Future versions of ``mongodb-crypt``
+  will be released alongside the driver and will share the same
+  version number. You must upgrade your ``mongodb-crypt`` dependency to
+  v5.2.0 when upgrading your driver for this release. To learn more, see
+  |encrypt-link|.
+
 - Performance improvements due to implementation of native cryptography
   on all supported platforms. The following list describes the actions
   needed to implement this improvement depending on your operating
