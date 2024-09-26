@@ -14,18 +14,20 @@
   needed to implement this improvement depending on your operating
   system:
   
-  - **Windows**: Upgrade to your ``mongodb-crypt`` version to v5.2.0.
+  - **Windows**: Upgrade your ``mongodb-crypt`` version to v5.2.0.
 
-  - **Mac**: Upgrade to your ``mongodb-crypt`` version to v5.2.0.
+  - **Mac**: Upgrade your ``mongodb-crypt`` version to v5.2.0.
 
   - **Linux**: Install ``libmongocrypt.so`` directly on the file system,
     instead of using the file that is bundled within the
-    ``mongodb-crypt`` JAR file. View Linux instructions for installing
+    ``mongodb-crypt`` JAR file. You can find Linux instructions to install
     ``libmongocrypt`` in the :manual:`Server manual
     </core/csfle/reference/libmongocrypt/#linux-installation>`. If you
-    use a package manager to install ``libmongocrypt``, JNA will find it
-    there without further configuration. If there is an issue, you can
-    specify the search path by setting ``LD_LIBRARY_PATH``.
+    use a package manager to install ``libmongocrypt``, Java Native
+    Access (JNA) will find it there without further configuration. If
+    there is an issue, you can specify the search path by setting the
+    ``LD_LIBRARY_PATH`` environment variable to the file path of the
+    ``libmongocrypt`` package.
     
     We recommend direct installation because the bundled shared library
     does not link with OpenSSL due to the potential for OpenSSL binary
