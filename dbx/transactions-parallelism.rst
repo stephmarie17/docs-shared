@@ -1,3 +1,5 @@
-The {+driver-short+} does not support running parallel operations within a single transaction.
+.. note:: Parallel Operations Not Supported
 
-|driver-specific-content|
+   The {+driver-short+} does not support running parallel operations within a single transaction.
+
+   |driver-specific-content|
