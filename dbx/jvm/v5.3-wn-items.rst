@@ -1,0 +1,11 @@
+- Adds the ``Vector`` class to implement BSON Binary Subtype 9 for
+  vector storage and retrieval. You can create the following vector
+  types based on the type of elements your vector contains:
+
+  - ``Int8Vector``: Vector of 8-bit signed integers
+
+  - ``Float32Vector``: Vector of floating-point numbers
+  
+  - ``PackedBitVector``: Binary quantized vector
+
+  |vector-type-example-link|
