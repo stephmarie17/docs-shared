@@ -7,6 +7,6 @@
 
   - ``Float32BinaryVector``: Vector of floating-point numbers
   
-  - ``PackedBitBinaryVector``: Binary quantized vector
+  - ``PackedBitBinaryVector``: Binary quantized vector *(In beta and subject to change before becoming generally available)*
 
   |vector-type-example-link|
