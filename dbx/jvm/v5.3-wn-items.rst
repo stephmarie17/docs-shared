@@ -10,3 +10,6 @@
   - ``PackedBitBinaryVector``: Binary quantized vector *(In beta and subject to change before becoming generally available)*
 
   |vector-type-example-link|
+
+- Adds a sort option to the ``updateOne()`` and ``replaceOne()``
+  methods. To learn more, see |update-replace-example-link|.
