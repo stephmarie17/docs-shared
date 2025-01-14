@@ -14,3 +14,8 @@
 
 - Adds a sort option to the ``updateOne()`` and ``replaceOne()``
   methods. To learn more, see |update-replace-example-link|.
+
+- Removes explicit fairness from the connection pool implementation.
+  This change might contribute to better throughput when you use
+  a ``MongoClient`` instance in many application threads. However, this
+  change might cause increased tail latency.
