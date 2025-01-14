@@ -12,5 +12,6 @@
   To learn more about this feature, see :atlas:`Vector Quantization </atlas-vector-search/vector-quantization/>`
   in the Atlas documentation. |vector-type-example-link|
 
-- Adds a sort option to the ``updateOne()`` and ``replaceOne()``
-  methods. To learn more, see |update-replace-example-link|.
+- Adds a sort option to the ``updateOne()`` and ``replaceOne()``methods. This change also allows
+  you to set a sort as an option when creating ``ReplaceOneModel`` and ``UpdateOneModel`` instances.
+  To learn more, see |update-replace-example-link|.
