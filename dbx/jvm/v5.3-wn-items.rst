@@ -1,4 +1,4 @@
-- :red:`Important: ` The next minor release will drop support for MongoDB
+- :red:`Important:` The next minor release will drop support for MongoDB
   Server version 4.0 and raise the minimum supported version to 4.2. We
   recommend making changes to your application to accommodate breaking changes.
   See the :manual:`Release Notes </release-notes/>` section in the Server manual to
