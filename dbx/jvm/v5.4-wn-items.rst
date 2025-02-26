@@ -1,1 +1,4 @@
-- 
+- Adds a sort option to the ``ClientUpdateOneOptions`` and
+  ``ClientReplaceOneOptions`` classes. This change allows you to set a
+  sort order for update and replace operations in client bulk writes.
+  To learn more, see |sort-option-link|.
