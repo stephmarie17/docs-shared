@@ -1,7 +1,7 @@
 To use DNS service discovery to look up the DNS SRV record of the service you're connecting to,
-specify the SRV connection format in your connection string. Additionally, if you enable
-the SRV connection format, the {+driver-short+} automatically re-scans for new hosts without
-having to change the client configuration.
+specify the SRV connection format in your connection string. If you specify this format,
+the {+driver-short+} automatically rescans for new hosts. Your deployment can add hosts to its
+topology without requiring changes in your client configuration.
 
 The following code shows a connection string that uses the SRV connection format:
 
