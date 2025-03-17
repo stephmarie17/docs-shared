@@ -2,3 +2,5 @@
   ``ClientReplaceOneOptions`` classes. This change allows you to set a
   sort order for update and replace operations in client bulk writes.
   To learn more, see |sort-option-link|.
+
+- Adds Kubernetes support for OIDC authentication. To learn more, see |k8s-link|.
