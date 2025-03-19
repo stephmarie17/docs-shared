@@ -7,18 +7,18 @@
 
 - Adds first class support for the following Atlas Search query operators:
   
-  - phrase
+  - ``phrase``
   
-  - regex
+  - ``regex``
   
-  - queryString
+  - ``queryString``
   
-  - equals
+  - ``equals``
   
-  - moreLikeThis
+  - ``moreLikeThis``
   
-  - in
+  - ``in``
   
-  - wildcard
+  - ``wildcard``
   
   To learn more, see |atlas-query-operators|. 
