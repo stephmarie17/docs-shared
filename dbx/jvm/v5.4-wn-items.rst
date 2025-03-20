@@ -4,3 +4,21 @@
   To learn more, see |sort-option-link|.
 
 - Adds Kubernetes support for OIDC authentication. To learn more, see |k8s-link|.
+
+- Adds first class support for the following Atlas Search query operators:
+  
+  - ``phrase``
+  
+  - ``regex``
+  
+  - ``queryString``
+  
+  - ``equals``
+  
+  - ``moreLikeThis``
+  
+  - ``in``
+  
+  - ``wildcard``
+  
+  To learn more, see |atlas-query-operators|. 
