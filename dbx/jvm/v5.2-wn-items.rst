@@ -1,7 +1,19 @@
-- Enables setting a client-side operations timeout. This feature
+- Enables setting a client-side operations timeout (CSOT). This feature
   allows you to set a single timeout on your ``MongoClient`` instance
   that applies to all operations performed with that client. To learn more,
   see |csot-link|.
+
+  .. important:: Deprecated Timeout Options
+
+     The following timeout options are deprecated:
+
+     - ``waitQueueTimeoutMS``
+     - ``socketTimeoutMS``
+     - ``wTimeoutMS``
+     - ``maxTimeMS``
+     - ``maxCommitTimeMS``
+
+     Use the CSOT feature to replace the functionality of these options.
 
 - Adds the ``SearchIndexType`` class, which you can pass
   when constructing a ``SearchIndexModel`` instance. This change
