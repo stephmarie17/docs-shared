@@ -21,4 +21,8 @@
   
   - ``wildcard``
   
-  To learn more, see |atlas-query-operators|. 
+  To learn more, see |atlas-query-operators|.
+
+To learn more about the changes in this release, see the
+:github:`v5.4 release notes <mongodb/mongo-java-driver/releases/tag/r5.4.0>` 
+on GitHub.
