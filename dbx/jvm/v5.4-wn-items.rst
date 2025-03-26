@@ -1,3 +1,12 @@
+- Supports ``$lookup`` operations for CSFLE and QE. To learn more, see the following
+  references in the Server manual:
+
+  - :upcoming:`$lookup and $graphLookup Behavior </core/csfle/reference/supported-operations/#-lookup-and--graphlookup-behavior>` for CSFLE
+  - :upcoming:`$lookup and $graphLookup Behavior </core/queryable-encryption/reference/supported-operations/#-lookup-and--graphlookup-behavior>` for QE
+
+- Updates AWS SDK dependencies to 2.30.31 and 1.12.782 for testing the
+  ``MONGODB-AWS`` authentication mechanism.
+
 - Adds a sort option to the ``ClientUpdateOneOptions`` and
   ``ClientReplaceOneOptions`` classes. This change allows you to set a
   sort order for update and replace operations in client bulk writes.
@@ -23,6 +32,12 @@
   
   To learn more, see |atlas-query-operators|.
 
-To learn more about the changes in this release, see the
+- Updates cursors to refresh the ``timeoutMS`` setting when you call ``close()`` without affecting
+  the operation timeout.
+
+- Enables you to use an index when calling the ``distinct()`` method by specifying a
+  ``hint`` option.
+
+To view a full list of changes in this release, see the
 :github:`v5.4 release notes <mongodb/mongo-java-driver/releases/tag/r5.4.0>` 
 on GitHub.
