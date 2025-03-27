@@ -1,6 +1,3 @@
-SearchOperator Helper Methods
------------------------------
-
 The {+driver-short+} provides helper methods for the following operations:
 
 .. list-table::
