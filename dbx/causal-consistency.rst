@@ -1,6 +1,7 @@
 MongoDB enables **causal consistency** in certain client
-sessions to guarantee that operations within a session
-run in a causal order. Clients observe results that are consistent
+sessions. The causal consistency model guarantees that in a
+distributed system, operations within a session run in a causal
+order. Clients observe results that are consistent
 with the causal relationships, or the dependencies between
 operations. For example, if you perform a series of operations where
 one operation logically depends on the result of another, any subsequent
@@ -16,11 +17,14 @@ following requirements:
 
 - Operations must run in a single session on a single thread. Otherwise,
   the sessions or threads must communicate the operation time and cluster
-  time values to each other.
+  time values to each other. To view an example of two sessions that communicate
+  these values, see the :manual:`Causal Consistency examples </core/read-isolation-consistency-recency/#examples>`
+  in the {+mdb-server+} manual.
 
 - You must use a |majority-rc| read concern.
 
-- You must use a |majority-wc| write concern.
+- You must use a |majority-wc| write concern. This is the default write concern
+  value.
   
 The following table describes the guarantees that causally
 consistent sessions provide:
