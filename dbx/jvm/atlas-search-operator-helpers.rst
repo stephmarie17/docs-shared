@@ -4,7 +4,7 @@ The {+driver-short+} provides helper methods for the following operations:
    :widths: 40 60
    :header-rows: 1
 
-   * - Operation
+   * - Operator
      - Description
 
    * - :atlas:`autocomplete </atlas-search/autocomplete/>`
@@ -66,10 +66,10 @@ Example Pipeline Search Stage
 
 The following code creates a search stage for a pipeline with the following filters:
 
-- Movies in the drama genre
-- Movies that include Sylvester Stallone in the cast, accounting for possible misspellings
-- Movies made between 1980 and 1989, inclusive
-- Movies with titles that begin with the word ``"Rocky"``
+- Movies with ``"drama"`` in the ``"genres"`` array
+- Movies that include ``"sylvester stallone"`` in the ``"cast"`` array, accounting for possible misspellings
+- Movies with a ``"year"`` between ``1980`` and ``1989``, inclusive
+- Movies with a ``"title"`` that begins with the word ``"Rocky"``
 
 |atlas-query-operators-example|
 
