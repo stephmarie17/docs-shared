@@ -43,3 +43,8 @@ to view instructions for adding the BOM for each dependency manager:
          dependencies {
              implementation(platform("org.mongodb:mongodb-driver-bom:{+full-version+}"))
          }
+
+To view a list of dependencies that the BOM manages, see
+the `mongodb-driver-bom Listing
+<https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-bom/{+full-version+}>`__
+on the Maven Repository website.
