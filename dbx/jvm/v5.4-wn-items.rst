@@ -4,6 +4,10 @@
   - :upcoming:`$lookup and $graphLookup Behavior </core/csfle/reference/supported-operations/#-lookup-and--graphlookup-behavior>` for CSFLE
   - :upcoming:`$lookup and $graphLookup Behavior </core/queryable-encryption/reference/supported-operations/#-lookup-and--graphlookup-behavior>` for QE
 
+- Introduces a Bill of Materials (BOM) to manage versions of MongoDB JVM
+  artifacts that you might use in your application. To view instructions on
+  adding the BOM to your application, see |install-bom-link|.
+
 - Updates AWS SDK dependencies to 2.30.31 and 1.12.782 for testing the
   ``MONGODB-AWS`` authentication mechanism.
 
