@@ -1,7 +1,7 @@
-The {+driver-short+} provides helper methods for the following operations:
+The {+driver-short+} provides helper methods for the following operators:
 
 .. list-table::
-   :widths: 40 60
+   :widths: 30 70
    :header-rows: 1
 
    * - Operator
@@ -59,18 +59,21 @@ Example Pipeline Search Stage
 
 .. note:: Atlas Sample Dataset
 
-   This example uses the MongoDB Atlas sample dataset. Specifically, the
-   ``movies`` collection in the ``sample_mflix`` database. You can learn how
-   to  set up your own free-tier Atlas cluster and how to load the sample dataset
-   in our :ref:`quick start guide <java-get-started>`.
+   This example uses the ``sample_mflix.movies`` collection from the Atlas sample
+   datasets. To learn how to set up a free-tier Atlas cluster and load the
+   sample dataset, see the :atlas:`Get Started with Atlas </getting-started/>` tutorial
+   in the Atlas documentation.
 
-The following code creates a search stage for a pipeline with the following filters:
+The following code creates a ``$search`` stage that has the following
+specifications:
 
-- Movies with ``"drama"`` in the ``"genres"`` array
-- Movies that include ``"sylvester stallone"`` in the ``"cast"`` array, accounting for possible misspellings
-- Movies with a ``"year"`` between ``1980`` and ``1989``, inclusive
-- Movies with a ``"title"`` that begins with the word ``"Rocky"``
+- Searches the ``genres`` array for the term ``"drama"``
+- Searches the ``cast`` array for the phrase ``"sylvester stallone"``, accounting for possible misspellings
+- Matches ``year`` values between ``1980`` and ``1989``, inclusive
+- Searches for ``title`` values that begins with the term ``"Rocky"``
 
 |atlas-query-operators-example|
 
-To learn more about the helper methods, see the |searchoperator-interface-api-docs|.
+To learn more about the Atlas Search helper methods, see the
+`SearchOperator <{+core-api+}/client/model/search/SearchOperator.html>`__ interface reference
+in the Driver Core API documentation.
