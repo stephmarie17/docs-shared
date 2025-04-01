@@ -76,6 +76,10 @@ collection that has the following definition:
          "title": {
            "analyzer": "lucene.keyword",
            "type": "string"
+         },
+         "genres": {
+           "normalizer": "lowercase",
+           "type": "token"
          }
        }
      }
@@ -86,10 +90,10 @@ To learn more about creating Atlas Search indexes, see |as-idx-link|.
 The following code creates a ``$search`` stage that has the following
 specifications:
 
-- Searches the ``genres`` array for the term ``"drama"``
-- Searches the ``cast`` array for the phrase ``"sylvester stallone"``, accounting for possible misspellings
-- Matches ``year`` values between ``1980`` and ``1989``, inclusive
-- Searches for ``title`` values that begins with the term ``"Rocky"``
+- Checks that the ``genres`` array includes ``"Comedy"``
+- Searches the ``fullplot`` field for the phrase ``"new york"``
+- Matches ``year`` values between ``1950`` and ``2000``, inclusive
+- Searches for ``title`` values that begins with the term ``"Love"``
 
 |atlas-query-operators-example|
 
