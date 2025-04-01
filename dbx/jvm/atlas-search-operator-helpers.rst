@@ -64,6 +64,25 @@ Example Pipeline Search Stage
    sample dataset, see the :atlas:`Get Started with Atlas </getting-started/>` tutorial
    in the Atlas documentation.
 
+Before you can run this example, you must create an Atlas Search index on the ``movies``
+collection that has the following definition:
+
+.. code-block:: json
+
+   {
+     "mappings": {
+       "dynamic": true,
+       "fields": {
+         "title": {
+           "analyzer": "lucene.keyword",
+           "type": "string"
+         }
+       }
+     }
+   }
+
+To learn more about creating Atlas Search indexes, see |as-idx-link|.
+
 The following code creates a ``$search`` stage that has the following
 specifications:
 
