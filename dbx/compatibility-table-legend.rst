@@ -11,8 +11,14 @@ Compatibility Table Legend
 
    * - ✓
      - All features are supported.
+
    * - ⊛
-     - The Driver version will work with the MongoDB version, but not all
+     - The driver version will work with the MongoDB version, but not all
        new MongoDB features are supported.
+
+   * - X
+     - The driver version will not work with the MongoDB version. Attempting
+       to connect to the MongoDB version will result in errors.
+
    * - No mark
-     - The Driver version is not tested with the MongoDB version.
+     - The driver version is not tested with the MongoDB version.
