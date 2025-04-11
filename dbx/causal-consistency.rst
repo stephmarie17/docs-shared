@@ -11,9 +11,7 @@ To guarantee causal consistency, client sessions must fulfill the
 following requirements:
 
 - When starting a session, the driver must enable the causal consistency
-  option. This option is enabled by default. To learn more, see the
-  :manual:`causalConsistency field </reference/method/Mongo.startSession/#mongodb-method-Mongo.startSession>`
-  in the {+mdb-server+} manual.
+  option. This option is enabled by default.
 
 - Operations must run in a single session on a single thread. Otherwise,
   the sessions or threads must communicate the operation time and cluster
@@ -47,20 +45,9 @@ consistent sessions provide:
      - If a write operation must precede other write operations, the server
        runs this write operation first.
 
-       For example, you can call |insert-one-method| to insert a document, then call
-       |update-one-method| to modify the inserted document. If a secondary node receives
-       your update operation and has not yet written the original insert operation to 
-       its :manual:`oplog </reference/glossary/#std-term-oplog>`, this operation is blocked
-       until the secondary applies the changes from the insert.
-
    * - Writes follow reads
-     - If a write operation must follow other read operations, the driver runs
+     - If a write operation must follow other read operations, the server runs
        the read operations first.
-
-       For example, you can call |find-one-method| to retrieve a document, then call
-       |delete-one-method| to delete the retrieved document. The server that receives
-       the delete waits to run the operation until it applies the changes from the original
-       find operation. 
 
 .. tip::
 
