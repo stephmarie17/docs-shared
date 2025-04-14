@@ -45,9 +45,17 @@ consistent sessions provide:
      - If a write operation must precede other write operations, the server
        runs this write operation first.
 
+       For example, if you call |insert-one-method| to insert a document, then call
+       |update-one-method| to modify the inserted document, the server runs the 
+       insert operation first.
+
    * - Writes follow reads
      - If a write operation must follow other read operations, the server runs
        the read operations first.
+
+       For example, if you call |find-one-method| to retrieve a document, then call
+       |delete-one-method| to delete the retrieved document, the server runs the find
+       operation first.
 
 .. tip::
 
