@@ -52,8 +52,6 @@ See the following table to see a description of each format:
      - | *Deprecated.* This representation is the legacy format that fully conforms to
          the `JSON RFC <http://www.json.org/>`__ which allows any JSON parser to read the type information.
 
-.. _extended_json_example_section:
-
 .. note::
 
    The {+driver-short+} parses the ``$uuid`` Extended JSON type from a string to a
@@ -61,3 +59,47 @@ See the following table to see a description of each format:
    parsing, see the
    :spec:`special rules for parsing $uuid fields </extended-json/extended-json.md#special-rules-for-parsing-uuid-fields>`
    section in the extended JSON specification.
+
+.. _extended_json_example_section:
+
+Extended JSON Examples
+~~~~~~~~~~~~~~~~~~~~~~
+
+The following examples show a document containing an ObjectId, date, and long
+number field represented in each Extended JSON format. Click the tab that
+corresponds to the format of the example you want to see:
+
+.. tabs::
+
+   .. tab:: Extended
+      :tabid: extended-format
+
+      .. code-block:: json
+
+         {
+           "_id": { "$oid": "573a1391f29313caabcd9637" },
+           "createdAt": { "$date": { "$numberLong": "1601499609" }},
+           "numViews": { "$numberLong": "36520312" }
+         }
+
+   .. tab:: Relaxed Mode
+      :tabid: relaxed-mode-format
+
+      .. code-block:: json
+
+         {
+           "_id": { "$oid": "573a1391f29313caabcd9637" },
+           "createdAt": { "$date": "2020-09-30T18:22:51.648Z" },
+           "numViews": 36520312
+         }
+
+   .. tab:: Shell
+      :tabid: shell-format
+
+      .. code-block:: json
+
+         {
+           "_id": ObjectId("573a1391f29313caabcd9637"),
+           "createdAt": ISODate("2020-09-30T18:22:51.648Z"),
+           "numViews": NumberLong("36520312")
+         }
