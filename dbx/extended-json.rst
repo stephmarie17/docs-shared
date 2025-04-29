@@ -38,19 +38,15 @@ See the following table to see a description of each format:
        | This format prioritizes type preservation at the loss of human-readability and
          interoperability with older formats.
 
-   * - **Relaxed Mode**
+   * - **Relaxed**
      - | JSON representation that describes BSON documents with some type information loss.
        | This format prioritizes human-readability and interoperability at the loss of
-         certain type information.
+         certain type information. |default-text|
 
    * - **Shell**
      - | JSON representation that matches the syntax used in the MongoDB shell.
        | This format prioritizes compatibility with the MongoDB shell, which often uses
          JavaScript functions to represent types.
-
-   * - **Strict**
-     - | *Deprecated.* This representation is the legacy format that fully conforms to
-         the `JSON RFC <http://www.json.org/>`__ which allows any JSON parser to read the type information.
 
 .. note::
 
