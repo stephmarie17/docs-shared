@@ -36,17 +36,17 @@ See the following table to see a description of each format:
      - | Also known as the *canonical* format, this JSON representation avoids loss of
          BSON type information.
        | This format prioritizes type preservation at the loss of human-readability and
-         interoperability with older formats.
+         interoperability with older formats. |driver-specific-text-extended|
 
    * - **Relaxed**
      - | JSON representation that describes BSON documents with some type information loss.
        | This format prioritizes human-readability and interoperability at the loss of
-         certain type information. |default-text|
+         certain type information. |driver-specific-text-relaxed|
 
    * - **Shell**
      - | JSON representation that matches the syntax used in the MongoDB shell.
        | This format prioritizes compatibility with the MongoDB shell, which often uses
-         JavaScript functions to represent types.
+         JavaScript functions to represent types. |driver-specific-text-shell|
 
 .. note::
 
