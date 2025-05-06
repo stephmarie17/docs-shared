@@ -18,7 +18,7 @@
      - MongoDB 3.0
      - MongoDB 2.6
    
-   * - 3.0 to 3.3
+   * - 3.0 to 3.4
      - ✓
      - ✓
      - ✓
@@ -271,6 +271,6 @@
      - ✓
      - ✓
 
-.. [#8.1-note] These driver versions are not compatible with MongoDB 8.1 or later because of an authentication issue. To learn more, see :ref:`csharp-server-8.1-incompatibility`.
+.. [#v3-note] These driver versions are not compatible with MongoDB 8.1 or later because of an authentication issue. To learn more, see :ref:`csharp-server-8.1-incompatibility`.
 
 The driver doesn't support older versions of MongoDB.
