@@ -161,5 +161,5 @@ performance, and the :wikipedia:`z-score <w/index.php?title=Standard_score&oldid
 .. tip::
 
    To learn more about how we conduct driver performance benchmark
-   tests, see the :spec:`Performance Benchmarking </extended-json/extended-json.md#special-rules-for-parsing-uuid-fields>`
+   tests, see the :spec:`Performance Benchmarking </benchmarking/benchmarking.md>`
    specification.
