@@ -7,7 +7,7 @@
 Performance Improvements
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The tables in this section show the results of performance results for
+The tables in this section show the results of performance tests for
 the synchronous Java driver. The tests were conducted on a MongoDB Server
 8.0 deployment with the following configuration:
 
