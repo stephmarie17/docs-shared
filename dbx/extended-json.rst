@@ -1,28 +1,29 @@
 Overview
 --------
 
-JSON is a data format that represents the values of objects, arrays, numbers,
-strings, booleans, and nulls. The **Extended JSON** format defines a reserved
-set of keys prefixed with "``$``" to represent field type information that
-directly corresponds to each type in BSON, the format that MongoDB uses to
-store data.
+In this guide, you can learn how to use the **Extended JSON** data format
+when interacting with MongoDB documents.
 
-To learn more about JSON, BSON, and Extended JSON, see
-`our article about JSON and BSON <https://www.mongodb.com/resources/basics/json-and-bson>`__
-and :manual:`Extended JSON </reference/mongodb-extended-json/>` in the {+mdb-server+} manual.
+JSON is a human-readable data format that represents the values of objects,
+arrays, numbers, strings, booleans, and nulls. This format supports only a
+subset of BSON data types, which is the format that MongoDB uses to store data. The
+Extended JSON format supports more BSON types, defining a reserved
+set of keys prefixed with "``$``" to represent field type information that
+directly corresponds to each type in BSON.
+
+To learn more about JSON, BSON, and Extended JSON, see the
+`JSON and BSON <https://www.mongodb.com/resources/basics/json-and-bson>`__ resource
+and :manual:`Extended JSON </reference/mongodb-extended-json/>` {+mdb-server+} manual
+entry.
 
 Extended JSON Formats
 ---------------------
 
-MongoDB Extended JSON features different string formats to represent BSON data.
-Each of the different formats conform to the JSON RFC
-and meet specific use cases. The **extended** format, also known as the
-**canonical** format, features specific representations for every BSON type
-for bidirectional conversion without loss of information. The **Relaxed mode**
-format is more concise and closer to ordinary JSON, but does not represent
-all the type information such as the specific byte size of number fields.
+MongoDB Extended JSON provides string formats to represent BSON data.
+Each format conforms to the `JSON RFC <https://www.rfc-editor.org/rfc/rfc8259>`__
+and meets specific use cases.
 
-See the following table to see a description of each format:
+The following table describes each Extended JSON format:
 
 .. list-table::
    :header-rows: 1
@@ -32,19 +33,18 @@ See the following table to see a description of each format:
    * - Name
      - Description
 
-   * - **Extended**
-     - | Also known as the *canonical* format, this JSON representation avoids loss of
-         BSON type information.
+   * - **Extended** or **Canonical**
+     - | A string format that avoids loss of BSON type information during data conversions.
        | This format prioritizes type preservation at the loss of human-readability and
          interoperability with older formats. |driver-specific-text-extended|
 
    * - **Relaxed**
-     - | JSON representation that describes BSON documents with some type information loss.
+     - | A string format that describes BSON documents with some type information loss.
        | This format prioritizes human-readability and interoperability at the loss of
          certain type information. |driver-specific-text-relaxed|
 
    * - **Shell**
-     - | JSON representation that matches the syntax used in the MongoDB shell.
+     - | A string format that matches the syntax used in the MongoDB shell.
        | This format prioritizes compatibility with the MongoDB shell, which often uses
          JavaScript functions to represent types. |driver-specific-text-shell|
 
