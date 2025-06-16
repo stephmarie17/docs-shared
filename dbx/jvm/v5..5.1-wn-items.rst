@@ -1,0 +1,2 @@
+- Fixes an issue where OIDC reauthentication failed when triggered by an operation 
+  run in a session, including operations run in a transaction.
