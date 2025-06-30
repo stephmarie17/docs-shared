@@ -1,12 +1,6 @@
 .. ATTENTION WRITERS: Please do not edit this page without approval from legal
 .. This page is hidden from the TOC and search indexing.
 
-:noprevnext:
-:orphan:
-
-.. meta::
-   :robots: noindex, nosnippet
-
 .. _atlas-data-processing:
 
 ===========================
