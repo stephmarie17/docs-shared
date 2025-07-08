@@ -1,0 +1,3 @@
+- Adds two new :ref:`SDAM error messages
+  <https://github.com/W-A-James/specifications/blob/4b8516dbec060923235bb7d75f9c7f85d9a9c939/source/server-discovery-and-monitoring/server-discovery-and-monitoring.md#error>`__
+  for electionId/setVersion mismatches. 
