@@ -6,7 +6,7 @@ when using the {+driver-long+} to connect to a MongoDB deployment.
 Server Connection Errors
 ------------------------
 
-When an issue occurs when you attempt to connect to a server, the {+driver-short+}
+If an issue occurs when you attempt to connect to a server, the {+driver-short+}
 returns an error message. If this error resembles the following message, it
 indicates that the driver cannot connect to a MongoDB deployment:
 
