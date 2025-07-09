@@ -1,3 +1,5 @@
-- Adds two new :ref:`SDAM error messages
-  <https://github.com/W-A-James/specifications/blob/4b8516dbec060923235bb7d75f9c7f85d9a9c939/source/server-discovery-and-monitoring/server-discovery-and-monitoring.md#error>`__
-  for electionId/setVersion mismatches. 
+- Adds two new SDAM error messages for when the server description changes to
+  ``UNKNOWN`` due to a stale primary node. To learn more about these error
+  messages, see the :spec:`Server Discovery and Monitoring
+  </server-discovery-and-monitoring/server-discovery-and-monitoring.md#error>`
+  Specification in GitHub.
