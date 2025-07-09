@@ -1,0 +1,5 @@
+- Adds two new SDAM error messages for when the server description changes to
+  ``UNKNOWN`` due to a stale primary node. To learn more about these error
+  messages, see the :spec:`Server Discovery and Monitoring
+  </server-discovery-and-monitoring/server-discovery-and-monitoring.md#error>`
+  Specification in GitHub.
