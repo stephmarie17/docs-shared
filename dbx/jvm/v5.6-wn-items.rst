@@ -3,3 +3,11 @@
   messages, see the :spec:`Server Discovery and Monitoring
   </server-discovery-and-monitoring/server-discovery-and-monitoring.md#error>`
   Specification in GitHub.
+
+- Instantiated ``MongoClient`` objects can now dynamically update client metadata.
+
+- Adds client-side operations timeout (CSOT) support for OIDC authentication. Note that
+  as of this release, CSOT is still in alpha.
+
+- Adds support for namespace type to the ``ChangeStreamDocument`` class. You can
+  specify this type by setting the ``nsType`` property of a ``ChangeStreamDocument`` instance.
