@@ -131,7 +131,7 @@ Examples of services and features for which Atlas does not regionalize data proc
     feature is configured, logs are pushed directly from {+service+}
     {+clusters+} to the customer's S3 bucket without traversing the {+service+} control plane
 
-- Data Explorer and Performance Advisor for :ref:`{+Serverless-instances+} <ref-deployment-types>`
+- Data Explorer and Performance Advisor for :ref:`Flex clusters <ref-deployment-types>`
 
 
 Examples of data that are **not** covered by a non-US 
