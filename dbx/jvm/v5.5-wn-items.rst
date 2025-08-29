@@ -1,0 +1,165 @@
+- Introduces performance improvements that are reflected in the driver performance
+  benchmarks. To view the results of the performance benchmark tests, see the following
+  :ref:`java-5.5-performance-improvements` section.
+
+.. _java-5.5-performance-improvements:
+
+Performance Improvements
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The tables in this section show the results of performance tests for
+the synchronous Java driver. The tests were conducted on a MongoDB Server
+8.0 deployment with the following configuration:
+
+- Running on ``localhost`` with negligible network latency.
+  In higher-latency environments, you might see less significant
+  performance improvements.
+- Authentication disabled.
+- TLS disabled.
+   
+We expect similar performance increases for all MongoDB
+Java drivers because they share the improved ``driver-core`` API.
+
+Standard Transport Settings
+```````````````````````````
+
+The following table shows the results of performance tests 
+for v5.5 of the driver configured with standard transport settings.
+Each row includes the feature tested, the percent improvement in 
+performance, and the :wikipedia:`z-score <w/index.php?title=Standard_score&oldid=1283065638>`.
+
+.. list-table::
+   :header-rows: 1
+   :stub-columns: 1
+   :widths: 50 25 25
+
+   * - Feature
+     - Percent Improvement
+     - Z-score
+
+   * - Deep BSON decoding
+     - 19.44%
+     - 5.4
+
+   * - Deep BSON encoding
+     - 102%
+     - 22.8
+
+   * - Find many and empty the cursor
+     - 25.08%
+     - 13.72
+
+   * - Find one by ID
+     - 2.7%
+     - 3.16
+
+   * - Flat BSON decoding
+     - 31.2%
+     - 9.38
+
+   * - Flat BSON encoding
+     - 199.5%
+     - 12.34
+
+   * - Full BSON decoding
+     - 16.5%
+     - 7.23
+
+   * - Full BSON encoding
+     - 147.3%
+     - 10.39
+
+   * - :wikipedia:`JSON-LD <w/index.php?title=JSON-LD&oldid=1254635130>` multi-file import
+     - 21.8%
+     - 8.21
+
+   * - Client bulk insert with large documents
+     - 91.3%
+     - 24.44
+
+   * - Collection bulk insert with large documents
+     - 96.5%
+     - 8.79
+
+   * - Bulk insert with large documents
+     - 93.3%
+     - 8.11
+
+   * - Bulk insert with small documents
+     - 39.3%
+     - 5.72
+
+   * - Insert one with large documents
+     - 82.4%
+     - 7.28
+
+   * - Client bulk insert with small documents
+     - 49.5%
+     - 17.99
+
+   * - Collection bulk insert with small documents
+     - 47.8%
+     - 6.44
+
+Netty Transport Settings
+````````````````````````
+
+The following table shows the results of performance tests 
+for v5.5 of the driver configured with Netty transport settings.
+Each row includes the feature tested, the percent improvement in 
+performance, and the :wikipedia:`z-score <w/index.php?title=Standard_score&oldid=1283065638>`.
+
+.. list-table::
+   :header-rows: 1
+   :stub-columns: 1
+   :widths: 50 25 25
+
+   * - Feature
+     - Percent Improvement
+     - Z-score
+
+   * - Find many and empty the cursor
+     - 40.3%
+     - 14.81
+
+   * - Find one by ID
+     - 4.4%
+     - 4.12
+
+   * - :wikipedia:`JSON-LD <w/index.php?title=JSON-LD&oldid=1254635130>` multi-file import
+     - 16.9%
+     - 3.77
+
+   * - Client bulk insert with large documents
+     - 54.8%
+     - 14.49
+
+   * - Collection bulk insert with large documents
+     - 104.9%
+     - 38.72
+
+   * - Bulk insert with large documents
+     - 74.6%
+     - 65.55
+
+   * - Insert one with large documents
+     - 66.6%
+     - 58.65
+
+   * - Client bulk insert with small documents
+     - 36.1%
+     - 15.41
+
+   * - Collection bulk insert with small documents
+     - 39.3%
+     - 37.38
+
+   * - Bulk insert with small documents
+     - 35.1%
+     - 41.51
+
+.. tip::
+
+   To learn more about how we conduct driver performance benchmark
+   tests, see the :spec:`Performance Benchmarking </benchmarking/benchmarking.md>`
+   specification.

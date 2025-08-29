@@ -3,22 +3,17 @@
    :stub-columns: 1
    :class: compatibility-large
 
-   * - PHP Driver Versions
+   * - {+odm+} Version
      - MongoDB 8.0
      - MongoDB 7.0
      - MongoDB 6.0
 
-   * - ext + lib 1.20 to 2.1
+   * - 9.0
      - ✓
      - ✓
      - ✓
 
-   * - ext + lib 1.16 to 1.19
-     - ⊛
+   * - 8.0 to 8.1
+     -
      - ✓
-     - ✓
-
-   * - ext + lib 1.15
-     - ⊛
-     - ⊛
      - ✓

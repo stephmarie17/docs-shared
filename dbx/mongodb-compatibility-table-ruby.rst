@@ -1,24 +1,24 @@
 .. list-table::
    :header-rows: 1
    :stub-columns: 1
-   :class: compatibility-large
+   :class: compatibility-large no-padding
 
-   * - PHP Driver Versions
+   * - Ruby Driver
      - MongoDB 8.0
      - MongoDB 7.0
      - MongoDB 6.0
 
-   * - ext + lib 1.20 to 2.1
+   * - 2.21
      - ✓
      - ✓
      - ✓
 
-   * - ext + lib 1.16 to 1.19
-     - ⊛
+   * - 2.19 to 2.20
+     -
      - ✓
      - ✓
 
-   * - ext + lib 1.15
-     - ⊛
-     - ⊛
+   * - 2.18
+     -
+     -
      - ✓

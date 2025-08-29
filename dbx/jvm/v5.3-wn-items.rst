@@ -1,0 +1,28 @@
+- :red:`Important:` The next minor release will drop support for MongoDB
+  Server version 4.0 and raise the minimum supported version to 4.2. We
+  recommend making changes to your application to accommodate breaking changes.
+  See the :manual:`Release Notes </release-notes/>` section in the Server manual to
+  learn more about upgrading.
+
+- Adds the ``BinaryVector`` class to implement BSON Binary Subtype 9 for
+  vector storage and retrieval. This class provides more effective storage
+  of values compared a list of ``Double`` instances. You can create the
+  following vector types based on the type of elements your vector contains:
+
+  - ``Int8BinaryVector``: Vector of 8-bit signed integers
+
+  - ``Float32BinaryVector``: Vector of floating-point numbers
+  
+  - ``PackedBitBinaryVector``: Binary quantized vector *(In beta and subject to change before becoming generally available)*
+
+  To learn more about this feature, see :atlas:`Vector Quantization </atlas-vector-search/vector-quantization/>`
+  in the Atlas documentation. |vector-type-example-link|
+
+- Removes explicit fairness from the connection pool implementation.
+  This change might contribute to better throughput when you use
+  a ``MongoClient`` instance in many application threads. However, this
+  change might cause increased tail latency.
+
+- Adds a sort option to the ``updateOne()`` and ``replaceOne()`` methods. This change also allows
+  you to set a sort as an option when creating ``ReplaceOneModel`` and ``UpdateOneModel`` instances.
+  To learn more, see |update-replace-example-link|.
