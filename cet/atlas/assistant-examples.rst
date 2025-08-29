@@ -37,7 +37,7 @@ assistant to automatically generate a prompt to diagnose the error.
           version of MongoDB Compass, share the findings of what works and what does
           not work with your network administrator
        4. If the legacy connection string does not work, follow troubleshooting steps
-      for the next error (the error message is expected to change)
+       for the next error (the error message is expected to change)
 
 Explain Plan
 ~~~~~~~~~~~~
@@ -120,7 +120,7 @@ Ask the MongoDB Assistant to analyze the output of your query:
         - Documents examined: 43,207
         - Execution time: ~1s
 
-        Optimization Suggestion 
+       Optimization Suggestion 
 
        To eliminate the FETCH stage and significantly reduce I/O, you can create a 
        compound index that includes both cuisine and borough. If you choose to create
