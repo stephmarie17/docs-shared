@@ -1,7 +1,7 @@
 Examples
 --------
 
-The following scenarios below show several uses of the MongoDB Assistant. 
+The following scenarios show several uses of the MongoDB Assistant. 
 
 Connection Error
 ~~~~~~~~~~~~~~~~
