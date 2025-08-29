@@ -37,7 +37,7 @@ assistant to automatically generate a prompt to diagnose the error.
           version of MongoDB Compass, share the findings of what works and what does
           not work with your network administrator
        4. If the legacy connection string does not work, follow troubleshooting steps
-       for the next error (the error message is expected to change)
+          for the next error (the error message is expected to change)
 
 Explain Plan
 ~~~~~~~~~~~~
@@ -116,9 +116,9 @@ Ask the MongoDB Assistant to analyze the output of your query:
 
        Performance Observations
 
-        - Keys examined: 43,207
-        - Documents examined: 43,207
-        - Execution time: ~1s
+       - Keys examined: 43,207
+       - Documents examined: 43,207
+       - Execution time: ~1s
 
        Optimization Suggestion 
 
@@ -149,59 +149,57 @@ User questions
 The following examples demonstrate questions you can ask the MongoDB assistant about 
 Compass/DE functions and queries. 
 
-Input:
+.. io-code-block::
+    :copyable: true
 
-.. code-block::
+    .. input::
 
-   How is MongoDB data modeling different from data modeling with a relational
-   database?
+       How is MongoDB data modeling different from data modeling with a relational
+       database?
 
-Output: 
+    .. output:: 
 
-.. code-block::
+       When using a relational database:
 
-   When using a relational database:
-
-   - You must determine a table's schema before you insert data. 
-   - You often need to join data from several different tables to return the 
-     data needed by your operation. 
+       - You must determine a table's schema before you insert data. 
+       - You often need to join data from several different tables to return the 
+         data needed by your operation. 
    
-   In MongoDB: 
+       In MongoDB: 
 
-   - Your schema can change over time as the needs of your application change.
-   - The flexible data model lets you store data to match the way your 
-     application returns data, and avoid joins. Avoiding joins across multiple 
-     collections improves performance and reduces your deployment's workload.
+       - Your schema can change over time as the needs of your application change.
+       - The flexible data model lets you store data to match the way your 
+         application returns data, and avoid joins. Avoiding joins across multiple 
+         collections improves performance and reduces your deployment's workload.
 
-Input: 
+.. io-code-block::
+    :copyable: true
 
-.. code-block::
+    .. input::
 
-   How can I combine multiple conditions in a single $search query?
+       How can I combine multiple conditions in a single $search query?
 
-Output:
+    .. output:: 
 
-.. code-block::
+       To combine multiple conditions in a single $search query, use the "compound"
+       operator. The "must" clause acts as an AND operator (all conditions must be met), 
+       "should" increases the relevancy score for documents that match (acting as a 
+       preferential OR), and "filter" applies conditions without affecting the score.
+       For example:
 
-   To combine multiple conditions in a single $search query, use the "compound"
-   operator. The "must" clause acts as an AND operator (all conditions must be met), 
-   "should" increases the relevancy score for documents that match (acting as a 
-   preferential OR), and "filter" applies conditions without affecting the score.
-   For example:
-
-   {
-    "$search": {
-     "compound": {
-      "must": [
-         {"text": {"query": "mongodb", "path": "title"} }
-      ],
-      "should": [
-         {"text": {"query": "database", "path": "description"} },
-         {"text": {"query": "flexibility", "path": "features"} }
-      ],
-      "filter": [
-         {"range": {"path": "year", "gte": 2020 } } 
-      ]
-     }
-    }
-   }
+       {
+        "$search": {
+        "compound": {
+          "must": [
+             {"text": {"query": "mongodb", "path": "title"} }
+          ],
+          "should": [
+             {"text": {"query": "database", "path": "description"} },
+             {"text": {"query": "flexibility", "path": "features"} }
+          ],
+          "filter": [
+             {"range": {"path": "year", "gte": 2020 } } 
+          ]
+         }
+        }
+       }
