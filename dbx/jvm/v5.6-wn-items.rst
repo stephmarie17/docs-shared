@@ -1,12 +1,55 @@
-- Adds two new SDAM error messages for when the server description changes to
-  ``UNKNOWN`` due to a stale primary node. To learn more about these error
-  messages, see the :spec:`Server Discovery and Monitoring
-  </server-discovery-and-monitoring/server-discovery-and-monitoring.md#error>`
-  Specification in GitHub.
+- Adds experimental support for Queryable Encryption prefix, suffix, and substring queries.
+  To learn more about QE, see |encrypt-link|.
+  
+  .. note:: Experimental Feature
 
-- Allows instantiated ``MongoClient`` objects to dynamically update client metadata.
+    Queryable Encryption prefix, suffix, and substring queries are unstable, and their
+    security is not guaranteed until they're generally available (GA). Use them in
+    experimental workloads only.
+
+- Adds an ``nsType`` field to ``ChangeStreamDocument`` objects. This field contains the
+  namespace type (``COLLECTION``, ``TIMESERIES``, or ``VIEW``) of the change event.
 
 - Adds client-side operation timeout (CSOT) support for OIDC authentication.
 
-- Adds support for a namespace type to the ``ChangeStreamDocument`` class. You can
-  specify this type by setting the ``nsType`` property of a ``ChangeStreamDocument`` instance.
+- When ``timeoutMS`` is set for CSOT, the driver ignores the value of the ``maxWaitTime``
+  connection setting.
+
+- Adds an ``appendMetadata()`` method to the ``MongoClient`` class. You can use this method
+  to append metadata to an existing client's metadata. The maximum
+  metadata size is 512 MB.
+
+- Adds a public constructor to the ``RewrapManyDataKeyOptions`` class.
+
+- Merges the ``AsyncReadOperation`` and ``AsyncWriteOperation`` interfaces into the
+  ``ReadOperation`` and ``WriteOperation`` interfaces. You can create read and write
+  operations by using builder methods in the ``Operations`` class.
+
+- Deprecates the ``MongoNamespace.COMMAND_COLLECTION_NAME`` constant.
+
+- Fixes a bug that prevented OIDC reauthentication within a session.
+
+- When serializing a POJO annotated with ``@BsonDiscriminator``, if the property's ``readName``
+  matches the discriminator key, the driver serializes the field only once.
+
+- After you call the ``next()`` or ``tryNext()`` method on a ``CommandCursorResult``
+  instance, the driver clears the ``CommandCursorResult.results`` property to free memory.
+
+- The ``PojoBuilderHelper`` class creates property models that include properties from
+  abstract classes and interfaces.
+
+- The driver publishes and logs the following events when the cluster topology changes:
+
+  - ``ClusterOpeningEvent``: Published when the topology opens
+  - ``ClusterDescriptionChangedEvent``: Published when the topology description changes
+  - ``ClusterClosedEvent``: Published when the topology closes
+
+- The driver throws a ``MongoStalePrimaryException`` when the primary replica set member
+  becomes stale for one of the following reasons:
+
+  - A new primary member is elected or discovered.
+  - The value of the ``electionId`` or ``setVersion`` field in the primary member doesn't
+    match the values of these fields in the other replica set members.
+
+  To learn more about replica sets, see :manual:`Replication </replication/>` in the
+  {+mdb-server+} manual.
