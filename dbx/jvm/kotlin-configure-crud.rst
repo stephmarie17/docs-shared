@@ -1,22 +1,3 @@
-.. _kotlin-sync-configure:
-
-=========================
-Configure CRUD Operations
-=========================
-
-.. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 2
-   :class: singlecol
-
-.. facet::
-   :name: genre
-   :values: reference
-
-.. meta::
-   :keywords: customize, preferences, replica set, consistency, kotlin
-
 Overview
 --------
 
