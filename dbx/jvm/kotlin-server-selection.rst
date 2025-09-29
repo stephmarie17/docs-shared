@@ -120,7 +120,7 @@ API Documentation
 To learn more about the classes and methods used in this guide, see the following API
 documentation:
 
-- `MongoClient <|client-api|>`__
+- |client-api|
 - `MongoClientSettings <{+core-api+}/MongoClientSettings.html>`__
 - `ServerSelector <{+core-api+}/selector/ServerSelector.html>`__
 - `ReadPreference <{+core-api+}/ReadPreference.html>`__
