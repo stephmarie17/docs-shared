@@ -41,7 +41,7 @@ write concerns.
 The following sections show how to configure these read and write settings
 at various levels.
 
-|read-write-client-anchor|
+.. _{+driver+}-read-write-config:
 
 Client Configuration
 ~~~~~~~~~~~~~~~~~~~~
@@ -74,7 +74,7 @@ URI, which is passed as a parameter to the ``MongoClient.create()`` method:
     :start-after: start-client-settings-uri
     :end-before: end-client-settings-uri
 
-|read-write-transaction-anchor|
+.. _{+driver+}-read-write-transaction:
 
 Transaction Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,7 +106,7 @@ The example configures the following settings:
     :start-after: start-transaction-settings
     :end-before: end-transaction-settings
 
-|read-write-database-anchor|
+.. _{+driver+}-read-write-database:
 
 Database Configuration
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -130,7 +130,7 @@ settings:
     :start-after: start-database-settings
     :end-before: end-database-settings
 
-|read-write-collection-anchor|
+.. _{+driver+}-read-write-collection:
 
 Collection Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -155,7 +155,7 @@ settings:
     :start-after: start-collection-settings
     :end-before: end-collection-settings
 
-|read-write-advanced-anchor|
+.. _{+driver+}-read-write-advanced:
 
 Advanced Read Configurations 
 ----------------------------
@@ -163,7 +163,7 @@ Advanced Read Configurations
 The following sections describe ways to further customize how the {+driver-short+}
 routes read operations.
 
-|sharded-clusters-anchor|
+.. _{+driver+}-sharded-clusters:
 
 Sharded Clusters
 ~~~~~~~~~~~~~~~~
@@ -196,7 +196,7 @@ The following example shows how to connect to a sharded cluster and specify a
     :start-after: start-sharded-cluster-uri
     :end-before: end-sharded-cluster-uri
 
-|tag-sets-anchor|
+.. _{+driver+}-tag-sets:
 
 Tag Sets
 ~~~~~~~~
@@ -240,7 +240,7 @@ any one server and ensures optimal performance.
 When connecting to a sharded cluster, the {+driver-short+} determines the closest ``mongos``
 instance by calculating which one has the lowest network round-trip time. Then, the driver
 determines the latency window by adding this ``mongos``'s average round-trip time to the
-`localThresholdMS` value. The driver load balances requests
+:ref:`localThresholdMS value <{+driver+}-local-threshold>`. The driver load balances requests
 across up to two random ``mongos`` instances that fall within the latency window. For each request,
 the driver chooses the server with the lower operation load by determining its ``operationCount``
 value.
@@ -256,7 +256,7 @@ the member with the lower ``operationCount`` value to receive the request.
   To learn more about load balancing, see :manual:`Sharded Cluster Balancer
   </core/sharding-balancer-administration/>` in the {+mdb-server+} manual.
 
-|local-threshold-anchor|
+.. _{+driver+}-local-threshold:
 
 Local Threshold
 ```````````````
