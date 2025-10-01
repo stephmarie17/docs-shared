@@ -100,9 +100,12 @@ see the corresponding syntax:
           how long the driver can keep a pooled connection open. 
 
           *Default*: ``0``
+
+    To learn more about limiting waiting time for new connections, see the 
+    :ref:`Limit Server Execution Time <kotlin-csot>` guide.
     
     To learn more about these options, see the `ConnectionString
-    <{+core-api+}/ConnectionString.html>`__ API documentation.
+    <{+core-api+}/ConnectionString.html>`__ API documentation. 
 
   .. tab:: MongoClientSettings
     :tabid: MongoClient
