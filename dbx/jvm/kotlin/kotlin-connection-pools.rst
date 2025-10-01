@@ -78,9 +78,7 @@ see the corresponding syntax:
         - Sets the maximum number of connections that can be open in a pool. If an
           operation needs a new connection while the connection pool has
           the maximum number of open connections, the operation
-          waits for a new connection to open. To limit this
-          waiting time, use the single timeout setting. To learn more,
-          see the |csot-guide-ref| guide.
+          waits for a new connection to open. 
 
           *Default:* ``100`` 
 
@@ -102,7 +100,7 @@ see the corresponding syntax:
           *Default*: ``0``
 
     To learn more about limiting waiting time for new connections, see the 
-    :ref:`Limit Server Execution Time <kotlin-csot>` guide.
+    |csot-guide-ref| guide.
     
     To learn more about these options, see the `ConnectionString
     <{+core-api+}/ConnectionString.html>`__ API documentation. 
